@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+ /* Global Buttons */
+ .btn {
+   border-radius: 25px;
+   padding: 0px;
+   width: 100px;
+   box-shadow: 4px 5px 5px;
+ }
+
+ .nav-link {
+   color: white;
+   font-weight: bolder;
+ }
+
+.sign-in-btn-dark {
+  background-color: #F1AB5E;
+}
+
+.sign-in-btn-light {
+  background-color: white;
+  color: #F1AB5E;
+}
+
+.sign-up-btn-dark, .sign-out-btn-dark {
+  background-color: #4197E5
+}
+
+.sign-up-btn-light, .sign-out-btn-dark {
+  background-color: white;
+  color: #4197E5;
+}
+
+.random-btn-dark {
+  background-color: #A54E4D;
+}
+
+.random-btn-light {
+  background-color: white;
+  color: #A54E4D;
+}
+
+.play-btn-dark {
+  background-color: #5F7511;
+}
+
+.play-btn-light {
+  background-color: white;
+  color: #5F7511;
+}

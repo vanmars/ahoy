@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm">
+  <% if user_signed_in? %>
+    <div class="navbar-nav mr-auto">
+      <button class="btn sign-out-btn-dark"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %></button>
+      <button class="btn play-btn-light"<a class="nav-link" href="/">Play</a></button>
+    </div>
+  <% else %>
+    <div class="navbar-nav mr-auto">
+      <button class="btn mr-3 mt-3 sign-in-btn-dark"><%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %></button>
+      <button class="btn mr-3 mt-3  sign-up-btn-dark"><%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %></button>
+      <button class="btn mr-3 mt-3  random-btn-dark"><a class="nav-link" href="/">Random</a></button>
+      <button class="btn mt-3  play-btn-dark"><a class="nav-link" href="/">Play</a></button>
+    </div>
+  <% end %> 
+</nav>

@@ -1,27 +1,6 @@
-<div class="splash-container h-100">
-  <nav class="navbar navbar-expand-sm">
-    <a class="navbar-brand" href="#">Ahoy!</a>
-    <div class="navbar-nav">
-        <%# <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/projects">Projects</a>
-        <a class="nav-link" href="/posts">Posts</a> %>
-      </div>
-    <% if user_signed_in? %>
-      <div class="navbar-nav ml-auto">
-        <%= link_to current_user.email, profile_path, class:'nav-link' %>
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
-      </div>
-    <% else %>
-      <div class="navbar-nav ml-auto">
-        <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %> 
-        <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
-      </div>
-    <% end %> 
-  </nav>
-
-  <div class="container splash-container">
-    <h1>Splash Page</h1>
-  </div>
-
+<div class="splash-container">
+  <%= render 'shared/header' %>
+  <h1 class="ml-auto" id="home-header">Ahoy!</h1>
+  <p class="ml-auto" id="home-tagline">An outline rescue game.</p>
   <%= render 'shared/footer' %>
 </div>
