@@ -62,3 +62,21 @@
   background-color: white;
   color: #5F7511;
 }
+
+/* Shared Header */
+#header-div {
+ margin-top: -75px;
+}
+
+#header-head {
+  /* font-family: farro; */
+  color: #0E4A71;
+  font-size: 100px;
+  
+}
+
+#header-tagline {
+  /* font-family: font-awesome; */
+  color: #0E4A71;
+  font-size: 18px;
+}

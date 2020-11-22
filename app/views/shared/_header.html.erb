@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm">
+<nav class="navbar navbar-expand-md">
   <% if user_signed_in? %>
     <div class="navbar-nav mr-auto">
       <button class="btn sign-out-btn-dark"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %></button>
@@ -12,4 +12,11 @@
       <button class="btn mt-3  play-btn-dark"><a class="nav-link" href="/">Play</a></button>
     </div>
   <% end %> 
+</nav>
+
+<nav class="navbar" id="header-div">
+ <div class="navbar-nav nav flex-column ml-auto">
+    <h1 id="header-head">AHOY!</h1>
+    <p id="header-tagline">An outline rescue game.</p>
+  </div>
 </nav>
