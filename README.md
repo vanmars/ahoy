@@ -80,4 +80,4 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 ## Photo Credits
 
-_Forthcoming_
+Splash Page: <a href="https://www.freepik.com/vectors/tree">Tree vector created by upklyak - www.freepik.com</a>
