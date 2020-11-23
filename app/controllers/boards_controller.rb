@@ -23,15 +23,27 @@ class BoardsController < ApplicationController
   def show
     @board = Board.find(params[:id])
     @data = []
-    @board.outlines.each do |outline|
-      @data << outline.evidece_1a
-      @data << outline.evidence_1b
-      @data << outline.close_call_1
-      @data << outline.red_herring_1
-      @data << outline.evidece_2a
-      @data << outline.evidece_2b
-      @data << outline.close_call_2
-      @data << outline.red_herring_2
+    @outline1 = @board.outlines[0]
+    @outline2 = @board.outlines[1]
+
+    @out1ev1a = Card.create({text: @outline1.evidence_1a, type: "evidence", color:"blue"})
+    @out1ev1b = Card.create({text: @outline1.evidence_1b, type: "evidence", color:"blue"})
+    @out1cc1 = Card.create({text: @outline1.close_call_1, type: "evidence", color:"yellow"})
+    @out1rh1 = Card.create({text: @outline1.red_herring_1, type: "evidence", color:"red"})
+    @out1ev2a = Card.create({text: @outline1.evidence_2a, type: "evidence", color:"blue"})
+    @out1ev2b = Card.create({text: @outline1.evidence_2b, type: "evidence", color:"blue"})
+    @out1cc2 = Card.create({text: @outline1.close_call_2, type: "evidence", color:"yellow"})
+    @out1rh2 = Card.create({text: @outline1.red_herring_2, type: "evidence", color:"red"})
+
+    @out2ev1a = Card.create({text: @outline2.evidence_1a, type: "evidence", color:"blue"})
+    @out2ev1b = Card.create({text: @outline2.evidence_1b, type: "evidence", color:"blue"})
+    @out2cc1 = Card.create({text: @outline2.close_call_1, type: "evidence", color:"yellow"})
+    @out2rh1 = Card.create({text: @outline2.red_herring_1, type: "evidence", color:"red"})
+    @out2ev2a = Card.create({text: @outline2.evidence_2a, type: "evidence", color:"blue"})
+    @out2ev2b = Card.create({text: @outline2.evidence_2b, type: "evidence", color:"blue"})
+    @out2cc2 = Card.create({text: @outline2.close_call_2, type: "evidence", color:"yellow"})
+    @out2rh2 = Card.create({text: @outline2.red_herring_2, type: "evidence", color:"red"})
+
     end
     render :show
   end
