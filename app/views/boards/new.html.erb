@@ -2,35 +2,28 @@
 <div class="board-container row align-items-center justify-content-center">
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Create New Game</h2>
+    <%= render "shared/errors", :object => @board %>
     <br>
 
     <%= form_for @board do |f| %>
-      <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control", style: "width: 50%" %>
       </div>
-      <br>
-
-      <div class="field">
-        <%= f.label :password %><br />
-        <%= f.password_field :password, autocomplete: "current-password" %>
+  
+      <div class="form-group">
+        <%= f.label :outline_id_1 %>
+        <%= f.text_field :outline_id_1, class: "form-control", style: "width: 50%" %>
       </div>
-      <br>
 
-      <% if devise_mapping.rememberable? %>
-        <div class="field">
-          <%= f.check_box :remember_me %>
-          <%= f.label :remember_me %>
-        </div>
-      <% end %>
-
-      <div class="actions">
-        <%= f.submit "Log In", class: "btn sign-in-btn-dark", id: "signin-btn" %>
+      <div class="form-group">
+        <%= f.label :outline_id_2 %>
+        <%= f.text_field :outline_id_2, class: "form-control", style: "width: 50%" %>
       </div>
+      
+      <%= f.submit 'Start Game!', class: "btn w-25" %>
     <% end %>
-    <br>
-
-    <%= render "devise/shared/links" %>
 
   </div>
 </div>

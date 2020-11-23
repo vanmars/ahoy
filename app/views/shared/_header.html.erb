@@ -5,15 +5,12 @@
       <button class="btn mr-3 mt-3 sign-in-btn-dark"><%= link_to 'Outlines', outlines_path, class: 'nav-link'%></button>
       <button class="btn mr-3 mt-3 random-btn-dark"><%= link_to 'Random', new_random_path, class: 'nav-link'%></button>
       <button class="btn mr-3 mt-3 play-btn-dark"><%= link_to 'Play', new_board_path, class: 'nav-link'%></button>
-      
     </div>
     <div class="navbar-nav">
-    <%= link_to "Hi, #{current_user.name}", home_account_path, class: 'nav-link', id: 'nav-name' %>
-    <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
-  </div>
+      <%= link_to "Hi, #{current_user.name}", home_account_path, class: 'nav-link', id: 'nav-name' %>
+      <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
+    </div>
 
-
-    
   <% else %>
     <div class="navbar-nav mr-auto">
     <button class="btn mr-3 mt-3  sign-up-btn-dark"><%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %></button>
@@ -22,10 +19,8 @@
       <button class="btn mt-3 play-btn-dark"><%= link_to 'Play', new_board_path, class: 'nav-link' %></button>
     </div>
     <div class="navbar-nav">
-    <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
-  </div>
+      <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
+    </div>
   <% end %> 
-
-  
 
 </nav>

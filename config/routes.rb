@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :outlines
+  resources :boards
 
   get 'home/index'
   get 'home/directions',  to: 'home#directions',  as: 'home_directions'
@@ -11,6 +12,5 @@ Rails.application.routes.draw do
   get 'home/account',      to: 'home#account',    as: 'home_account'
 
   get 'random',          to: 'random#new',        as: 'new_random'
-  get 'boards',           to: 'boards#new',       as: 'new_board'
   
 end

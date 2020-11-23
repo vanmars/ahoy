@@ -1,0 +1,31 @@
+.game-nav{
+  background-color: #4197E5;
+}
+.game-container { 
+  background: url('island-view.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.game-view-nav {
+  color: white;
+}
+
+#islander-view {
+  margin-right: 10px;
+}
+
+#captain-view {
+  margin-left: 10px;
+}
+
+#islander-view:hover, #captain-view:hover {
+  text-decoration: underline;
+}
+
+#game-turn {
+  color: #CAFDFF;
+}
