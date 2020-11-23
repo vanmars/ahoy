@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   get 'home/about',       to: 'home#about',       as: 'home_about'
   get 'home/contact',     to: 'home#contact',     as: 'home_contact'
 
-  get '/random',          to: 'random#new',       as: 'new_random'
-
-  get '/play',            to: 'play#new',         as: 'new_play'
+  get 'random',          to: 'random#new',        as: 'new_random'
+  get 'boards',           to: 'boards#new',       as: 'new_board'
   
 end

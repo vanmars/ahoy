@@ -1,0 +1,18 @@
+.outlines-container { 
+  background: url('water.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.outlines {
+  height: 60vh;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.outlines-header {
+  height: 15vh;
+}

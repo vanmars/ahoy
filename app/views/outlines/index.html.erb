@@ -1,18 +1,34 @@
-<h1>My Outlines</h1>
+<div class="outlines-container">
+  <div class="outlines-header">
+  </div>
 
-<% if @outlines.any? %>
-  <h4>Here are my outlines:</h4>
-  <% @outlines.each do |outline| %>
-    <ul>
-      <li>
-        <%= link_to outline.name, outline_path(outline) %>
-      </li>
-    </ul>
-  <% end %>
-<% else %>
-  <p>You have no outlines saved.</p>
-<% end %>
+  <div class="outlines p-4 row">
+    <div class="col-6-sm">
+      <h1>My Outlines</h1>
+      <p><%= link_to "Add an outline", new_outline_path %></p>
+      <p><%= link_to "Return to Ahoy Page", home_index_path %></p>
+    </div>
 
-<hr>
-<p><%= link_to "Add an outline", new_outline_path %></p>
-<p><%= link_to "Return to Ahoy Page", home_index_path %></p>
+    <div class="col-6-sm">
+      <% if @outlines.any? %>
+        <h4>Here are my outlines:</h4>
+        <% @outlines.each do |outline| %>
+          <ul>
+            <li>
+              <%= link_to outline.name, outline_path(outline) %>
+            </li>
+          </ul>
+        <% end %>
+      <% else %>
+        <p>You have no outlines saved.</p>
+      <% end %>
+    </div>
+
+    <hr>
+    
+    
+
+    
+  </div>
+</div>
+<%= render 'shared/footer' %>

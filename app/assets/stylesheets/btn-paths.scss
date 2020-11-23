@@ -8,13 +8,13 @@
   margin-top: 10vh;
 }
 
-#signup-btn, #signin-btn {
+#signup-btn, #signin-btn, #random-btn {
   padding: 5px 0px;
   color: white;
   font-weight: bolder;
 }
 
-#signup-btn:hover, #signin-btn:hover {
+#signup-btn:hover, #signin-btn:hover, #random-btn:hover {
   border: solid  #0E4A71 1px;
   color: #0E4A71;
 }
@@ -23,5 +23,13 @@
 .login-container {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,171,94,1) 100%);
-
 }
+
+// Random
+.random-container {
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(165,78,77,1) 50%); 
+}
+
+
+// Play
