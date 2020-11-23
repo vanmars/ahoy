@@ -1,0 +1,27 @@
+// Sign Up
+.registration-container {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(69,163,227,1) 100%);
+}
+
+.registration-card {
+  margin-top: 10vh;
+}
+
+#signup-btn, #signin-btn {
+  padding: 5px 0px;
+  color: white;
+  font-weight: bolder;
+}
+
+#signup-btn:hover, #signin-btn:hover {
+  border: solid  #0E4A71 1px;
+  color: #0E4A71;
+}
+
+// Log In
+.login-container {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,171,94,1) 100%);
+
+}

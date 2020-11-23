@@ -1,12 +1,32 @@
 // *= require_tree .
 // *= require_self
 
+// Fonts
+// font-family: 'Josefin Slab', serif;
+// font-family: 'Sail', cursive;
+
+// Colors
+// Yellow: #F1AB5E;
+// Blue: #4197E5;
+// Red: #A54E4D;
+// Green: #5F7511;
+// Light Blue: #CAFDFF;
+// Navy Blue: #0E4A71
+
+* {
+  font-family: 'Josefin Slab', serif;
+}
+
  /* Global Buttons */
  .btn {
    border-radius: 25px;
    padding: 0px;
    width: 100px;
    box-shadow: 4px 5px 5px;
+ }
+
+ .btn:hover {
+   color: #0E4A71;
  }
 
  .nav-link {
