@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_23_010902) do
+ActiveRecord::Schema.define(version: 2020_11_23_190810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "board_outlines", id: false, force: :cascade do |t|
+    t.bigint "board_id"
+    t.bigint "outline_id"
+    t.index ["board_id"], name: "index_board_outlines_on_board_id"
+    t.index ["outline_id"], name: "index_board_outlines_on_outline_id"
+  end
+
+  create_table "boards", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "outlines", force: :cascade do |t|
     t.string "claim_1"

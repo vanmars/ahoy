@@ -2,6 +2,7 @@ require 'rails_helper'
 
 describe Outline do
   it { should belong_to(:user) }
+  it { should have_many(:boards).through(:board_outlines) }
 
   it { should validate_presence_of :name }
 
