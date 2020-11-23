@@ -6,6 +6,7 @@
       <button class="btn mr-3 mt-3  random-btn-dark"><%= link_to 'Random', home_index_path, class: 'nav-link'%></button>
       <button class="btn mt-3 play-btn-dark"><%= link_to 'Play', home_index_path, class: 'nav-link'%></button>
     </div>
+
   <% else %>
     <div class="navbar-nav mr-auto">
     <button class="btn mr-3 mt-3  sign-up-btn-dark"><%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %></button>
@@ -14,10 +15,9 @@
       <button class="btn mt-3 play-btn-dark"><%= link_to 'Play', home_index_path, class: 'nav-link'%></button>
     </div>
   <% end %> 
-</nav>
-<nav class="navbar" id="header-div">
- <div class="navbar-nav nav flex-column ml-auto">
-    <h1 id="header-head">AHOY!</h1>
-    <p id="header-tagline">An outline rescue game.</p>
+
+  <div class="navbar-nav">
+  <%= link_to 'AHOY!', home_index_path, id: "nav-header" %>
+  
   </div>
 </nav>
