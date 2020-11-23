@@ -11,4 +11,8 @@ class HomeController < ApplicationController
   def directions
   end
 
+  def account
+    @user = current_user
+  end
+
 end
