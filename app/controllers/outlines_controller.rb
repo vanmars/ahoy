@@ -1,4 +1,4 @@
-class OutlineController < ApplicationController
+class OutlinesController < ApplicationController
   before_action :set_user
 
   def index
