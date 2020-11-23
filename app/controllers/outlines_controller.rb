@@ -27,7 +27,7 @@ class OutlinesController < ApplicationController
   end
 
   def edit
-    @outline = Outline,find(params[:id])
+    @outline = Outline.find(params[:id])
     render :edit
   end
 

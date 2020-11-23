@@ -1,0 +1,31 @@
+<h1>Name: <%= @outline.name %></h1>
+<p>ID: <%= @outline.id %></p>
+<hr>
+
+<h2>Claim 1</h2>
+<p><%= @outline.claim_1 %></p>
+<hr>
+<p>Evidence 1a: <%= @outline.evidence_1a %> </p>
+<p>Evidence 1b: <%= @outline.evidence_1b %> </p>
+<p>Close Call 1: <%= @outline.close_call_1 %> </p>
+<p>Red Herring 1: <%= @outline.red_herring_1 %> </p>
+<hr>
+<br>
+
+<h2>Claim 2</h2>
+<p><%= @outline.claim_2 %> </p>
+<hr>
+<p>Evidence 2a: <%= @outline.evidence_2a %> </p>
+<p>Evidence 2b: <%= @outline.evidence_2b %> </p>
+<p>Close Call 2: <%= @outline.close_call_2 %> </p>
+<p>Red Herring 2: <%= @outline.red_herring_2 %> </p>
+<hr>
+<br>
+
+
+<p><%= link_to "Edit Outline", edit_outline_path(@outline) %></p>
+<p><%= link_to "Delete outline", outline_path(@outline),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %></p>
+
+<p><%= link_to "Return to outlines", outlines_path %></p>
