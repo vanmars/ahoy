@@ -40,9 +40,11 @@
   background-color: #4197E5
 }
 
-.sign-up-btn-light, .sign-out-btn-dark {
+.sign-up-btn-light, .sign-out-btn-light {
   background-color: white;
   color: #4197E5;
+  font-weight: bolder;
+  border: solid 2px #4197E5; 
 }
 
 .random-btn-dark {
@@ -61,6 +63,7 @@
 .play-btn-light {
   background-color: white;
   color: #5F7511;
+  border: solid 2px #5F7511;
 }
 
 /* Shared Header */

@@ -1,0 +1,22 @@
+<h1>My Outlines</h1>
+<button class"sign-in-btn-dark>Create New Outline</buttion>
+
+<% if @outlines.any? %>
+  <h4>Here are my outlines:</h4>
+
+  <% @outlines.each do |outline| %>
+    <ul>
+      <li>
+        <%= link_to outline.name, outline_path(outline) %>
+      </li>
+    </ul>
+  <% end %>
+<% else %>
+  <p>You have no outlines saved.</p>
+<% end %>
+
+<p><%= link_to "Add an outline", new_outline_path %></p>
+
+
+
+<p><%= link_to "Return to AhoyPage", home_index_path %></p>
