@@ -16,6 +16,8 @@ class OutlinesController < ApplicationController
     if @outline.save
       flash[:notice] = "Outline successfully added!"
       redirect_to outlines_path
+    else
+      render :new
     end
   end
 
@@ -53,7 +55,7 @@ private
   end
 
   def outline_params
-    params.require(:outline).permit(:claim_1, :evidence_1a, :evidence_1b, :close_call_1, :red_herring_1, :claim_2, :evidence_2a, :evidence_2b, :close_call_2, :red_herring_2)
+    params.require(:outline).permit(:name, :claim_1, :evidence_1a, :evidence_1b, :close_call_1, :red_herring_1, :claim_2, :evidence_2a, :evidence_2b, :close_call_2, :red_herring_2)
   end
 
 end

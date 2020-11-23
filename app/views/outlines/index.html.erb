@@ -1,9 +1,7 @@
 <h1>My Outlines</h1>
-<button class=" btn sign-in-btn-dark">Add Outline</button>
 
 <% if @outlines.any? %>
   <h4>Here are my outlines:</h4>
-
   <% @outlines.each do |outline| %>
     <ul>
       <li>
@@ -15,8 +13,6 @@
   <p>You have no outlines saved.</p>
 <% end %>
 
+<hr>
 <p><%= link_to "Add an outline", new_outline_path %></p>
-
-
-
 <p><%= link_to "Return to Ahoy Page", home_index_path %></p>

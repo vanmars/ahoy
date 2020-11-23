@@ -2,7 +2,9 @@ require 'rails_helper'
 
 describe Outline do
   it { should belong_to(:user) }
-  
+
+  it { should validate_presence_of :name }
+
   it { should validate_presence_of :claim_1 }
   it { should validate_presence_of :evidence_1a }
   it { should validate_presence_of :evidence_1b }

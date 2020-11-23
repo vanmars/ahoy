@@ -1,8 +1,4 @@
-<% if @outline.errors.any? %>
-  <h3>Please fix these errors:</h3>
-  <ul>
-    <% @outline.erros.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render "shared/errors", :object => @outline %>
+<h1>Create a New Outline</h1>
+<%= render "shared/outline_form" %>
+
