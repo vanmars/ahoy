@@ -37,9 +37,9 @@ $(document).ready(function() {
   const turnChange = (ev) => {
     if (turn == 'B' && clickTracker.length < 2){   // If turn is blue, and it is the first turn.
         // If first click is a blue, it remains blue's turn.
-        if (ev.target.className == 'blue' || ev.path[1].className == 'blue') {
+        if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue')) {
           turn = 'B';
-          // If first click is not a blue: change turn to G, change screen text, and reset clickTracker.
+          // If first click is not a blue, it becomes green's turn.
         } else {
           turn = 'G';
           document.querySelector('#turn-text').innerHTML = "Green's Turn";
@@ -54,7 +54,7 @@ $(document).ready(function() {
   
     } else if (turn == 'G' && clickTracker.length < 2) {  // If turn is green, and it is the first turn.
         // If first click is a green, it remains green's turn.
-        if (ev.target.className == 'green' || ev.path[1].className == 'green') {
+        if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green')) {
         turn = 'P';
         // If first click is not a green: change turn to B, change screen text, and reset clickTracker.
         } else {
@@ -87,8 +87,6 @@ $(document).ready(function() {
       ev.target.parentNode.style.backgroundColor = '#4197E5';
       flippedBlue.push(ev);
       blueWin();
-
-
     } else if (ev.target.classList.contains('green')) {     
       ev.target.style.backgroundColor = '#5F7511';
       flippedGreen.push(ev);
@@ -151,30 +149,4 @@ $(document).ready(function() {
     $('#card14').click(cardClicked);
     $('#card15').click(cardClicked);
     $('#game-view').click(viewToggler);
-
-    
-  
   });
-
-
-  // const changeCardColorByView = () => {
-  //   const view = document.querySelector('#game-view');
-  //   const cards = document.querySelectorAll('.board-card');
-  //   if (view.innerHTML === "Go To Islander's View") {
-  //     cards.forEach(function(card){
-  //       card.style.backgroundColor = '#0E4A71';
-  //     });
-  //   } else if (view.innerHTML === "Go To Captain's View") {
-  //     cards.forEach(function(card){
-  //       if (card.classList.contains('blue')){
-  //         card.style.backgroundColor = '#4197E5';
-  //       } else if (card.classList.contains('green')){
-  //         card.style.backgroundColor = '#5F7511';
-  //       } else if (card.classList.contains('yellow')){
-  //         card.style.backgroundColor = '#F1AB5E';
-  //       } else if (card.classList.contains('red')){
-  //         card.style.backgroundColor = '#A54E4D';
-  //       };
-  //     });
-  //   }
-  // }
