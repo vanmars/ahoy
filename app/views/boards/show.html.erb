@@ -2,12 +2,14 @@
   <nav class="game-nav navbar navbar-expand-sm ">
     <div class="navbar-nav mr-auto">
       <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
-      <p id="turn-text">Blue's Turn</p>
+      <% if @turn === "blue" %>
+        <p id="turn-text">Blue's Turn</p>
+      <% else %>
+        <p id="turn-text">Green's Turn</p>
+      <% end %>
     </div>
     <div class="navbar-nav ml-auto game-view-nav">
-      <p id="islander-view">Islander View</p>
-      <p> | </p>
-      <p id="captain-view">Captain View</p>
+      <p id="game-view">Islander View</p>
     </div>
   </nav>
 </header>

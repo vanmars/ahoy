@@ -122,6 +122,11 @@
       turnChange(ev);
     }
   };
+
+  // 4. User can toggle the view
+  const viewToggler = (ev) => {
+    console.log(ev.target)
+  }
   
       // Create Event Listeners
   document.querySelector('#card0').onclick = cardClicked;
@@ -140,3 +145,5 @@
   document.querySelector('#card13').onclick = cardClicked;
   document.querySelector('#card14').onclick = cardClicked;
   document.querySelector('#card15').onclick = cardClicked;
+
+  document.querySelector('#game-view').onclick = viewToggler;
