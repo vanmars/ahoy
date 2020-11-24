@@ -13,7 +13,7 @@
 }
 
 #turn-text {
-  color: #CAFDFF;
+  // color: #CAFDFF;
   font-weight: bolder;
   font-size: 20px;
   margin-top: 20px;
@@ -31,6 +31,13 @@
 }
 
 #board {
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  margin-right: 15vw;
+}
+
+#islander-board {
   position: absolute;
   top: 15vh;
   left: 5vw;

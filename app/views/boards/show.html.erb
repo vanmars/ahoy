@@ -9,25 +9,42 @@
       <% end %>
     </div>
     <div class="navbar-nav ml-auto game-view-nav">
-      <p id="game-view">See Islander's View</p>
+      <p id="game-view">Go To Islander's View</p>
     </div>
   </nav>
 </header>
 
 <main class="game-container">
   <% if @data.any? %>
+     <article id="islander-board" class="row row-cols-3 row-cols-sm-4" >
+      <% @data.each_with_index do |card, index| %>
+        <% background = ""%>
+        <% if card.color == "blue" %>
+          <% background ="#4197E5" %>
+        <% elsif card.color == "green" %>
+          <% background = "#5F7511" %>
+        <% elsif card.color == "yellow" %>
+          <% background = "#F1AB5E" %>
+        <% elsif card.color == "red" %>
+          <% background = "#A54E4D" %>
+        <% end %>
+
+        <section class="col mb-4">
+          <div class="islander-board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="islander-board-card<%= index %>" style="background-color: <%= background %>">
+            <p class="card-text"><%= card.text %></p>
+          </div>
+        </section>
+
+      <% end %>
+    </article>
     <article id="board" class="row row-cols-3 row-cols-sm-4" >
       <% @data.each_with_index do |card, index| %>
-
         <section class="col mb-4">
           <div class="board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="card<%= index %>">
             <p class="card-text"><%= card.text %></p>
           </div>
         </section>
       <% end %>
-      
-
-
     </article>
   <% else %>
     <p>There was an error. Please enter your outlines again. Make sure both outlines have the correct information stored!</p>

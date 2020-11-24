@@ -34,7 +34,6 @@ class BoardsController < ApplicationController
     @out1ev2b = Card.create({text: @outline1.evidence_2b, category: "blue_evidence", color:"blue"})
     @out1cc2 = Card.create({text: @outline1.close_call_2, category: "blue_close_call", color:"yellow"})
     @out1rh2 = Card.create({text: @outline1.red_herring_2, category: "blue_red_herring", color:"red"})
-
     @out2ev1a = Card.create({text: @outline2.evidence_1a, category: "green_evidence", color:"green"})
     @out2ev1b = Card.create({text: @outline2.evidence_1b, category: "green_evidence", color:"green"})
     @out2cc1 = Card.create({text: @outline2.close_call_1, category: "green_close_call", color:"yellow"})

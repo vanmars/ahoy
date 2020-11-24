@@ -1,8 +1,12 @@
-// 1. THE GAME DETECTS A WIN SCENARIO
+$(document).ready(function() {
+// GAME DETECTS A WIN SCENARIO
   // Create Lists to track when flipped blue cards and flipped green cards occur.
   // Use the cardClicked function below to append each list.
   let flippedBlue = [];
   let flippedGreen = [];
+
+  // Define variable to track mouse click.
+  let clickTracker = [];
   
   //When the blue count list length equals four, cue blue win scenario page.
   const blueWin = () => {
@@ -21,11 +25,7 @@
   };
   
   // 2. THE GAME DETECTS WHOSE TURN IT IS AND PRINTS IT TO THE SCREEN.
-    // Define a variable called 'turn'.
-  let turn = 'B';
-  
-   // Define variable to track mouse click.
-  let clickTracker = [];
+ 
   
     // Create function that defines how to change text, turn, clickTracker list on each turn scenario.
   const turnChange = (ev) => {
@@ -68,14 +68,14 @@
       // Create Event Handlers
   const cardClicked = (ev) => {
     console.log(ev)
-    if (ev.target.className == 'blue') {            // If clicked div card has a blue class tag, it will turn blue.
+    if (ev.target.classList.contains('blue')) {            // If clicked div card has a blue class tag, it will turn blue.
       ev.target.style.backgroundColor = '#4197E5';
       flippedBlue.push(ev);                         // Append event to flippedBluelist.
       blueWin();                                    // Initialize blueWin function to see if there is a blue win scneario.
       clickTracker.push(ev);                          // Append event to clickTracker list to keep track of turn tacken.
       turnChange(ev);                                 // Check to see if the turn needs to change to green.
-    } else if (ev.path[1].className == 'blue'){     // In case users click on the text element rather than the div card, the div card will still change color, not just the text.
-      ev.path[1].style.backgroundColor = '#4197E5';
+    } else if (ev.target.parentNode.classList.contains('blue')){     // In case users click on the text element rather than the div card, the div card will still change color, not just the text.
+      ev.parentNode.style.backgroundColor = '#4197E5';
       flippedBlue.push(ev);
       blueWin();
       clickTracker.push(ev);
@@ -123,44 +123,30 @@
     }
   };
 
-  // 4. User can toggle the view
+  // 4. User CAN TOGGLE THE VIEW
   const viewToggler = (ev) => {
-    if (ev.target.innerHTML === "See Islander's View") {
-      ev.target.innerHTML = "See Captain's View";
+    if (ev.target.innerHTML === "Go To Islander's View") {
+      ev.target.innerHTML = "Go To Captain's View";
     } else {
-      ev.target.innerHTML = "See Islander's View";
+      ev.target.innerHTML = "Go To Islander's View";
     };
     changeCardColorByView();
   }
 
   const changeCardColorByView = () => {
     const view = document.querySelector('#game-view');
-    const cards = document.querySelectorAll('.board-card');
-    if (view.innerHTML === "See Islander's View") {
-      console.log("Captain's View");
-      console.log(cards[0])
-      cards.forEach(function(card){
-        card.style.backgroundColor = '#0E4A71';
-      });
-    } else if (view.innerHTML === "See Captain's View") {
-      console.log("Islander's View");
-      console.log(cards[0].className)
-      cards.forEach(function(card){
-        if (card.classList.contains('blue')){
-          card.style.backgroundColor = '#4197E5';
-        } else if (card.classList.contains('green')){
-          card.style.backgroundColor = '#5F7511';
-        } else if (card.classList.contains('yellow')){
-          card.style.backgroundColor = '#F1AB5E';
-        } else if (card.classList.contains('red')){
-          card.style.backgroundColor = '#A54E4D';
-        };
-      });
+    // const cards = document.querySelectorAll('.board-card');
+    if (view.innerHTML === "Go To Islander's View") {
+      $('#islander-board').hide();
+      $('#board').show();
+    } else if (view.innerHTML === "Go To Captain's View") {
+      $('#board').hide();
+      $('#islander-board').show();
     }
   }
   
       // Create Event Listeners
-  $(document).ready(function() {
+
     console.log("Event listeners attached!")
     $('#card0').click(cardClicked);
     $('#card1').click(cardClicked);
@@ -179,24 +165,38 @@
     $('#card14').click(cardClicked);
     $('#card15').click(cardClicked);
     $('#game-view').click(viewToggler);
+
+
+    // Define a variable called 'turn'.
+    let turn;
+    if ($('#turn-text').html() === "Blue's Turn"){
+      turn = 'B'
+    } else {
+      turn = 'G'
+    }
+  
+    
   });
 
 
-    // document.querySelector('#card0').onclick = cardClicked;
-    // document.querySelector('#card1').onclick = cardClicked;
-    // document.querySelector('#card2').onclick = cardClicked;
-    // document.querySelector('#card3').onclick = cardClicked;
-    // document.querySelector('#card4').onclick = cardClicked;
-    // document.querySelector('#card5').onclick = cardClicked;
-    // document.querySelector('#card6').onclick = cardClicked;
-    // document.querySelector('#card7').onclick = cardClicked;
-    // document.querySelector('#card8').onclick = cardClicked;
-    // document.querySelector('#card9').onclick = cardClicked;
-    // document.querySelector('#card10').onclick = cardClicked;
-    // document.querySelector('#card11').onclick = cardClicked;
-    // document.querySelector('#card12').onclick = cardClicked;
-    // document.querySelector('#card13').onclick = cardClicked;
-    // document.querySelector('#card14').onclick = cardClicked;
-    // document.querySelector('#card15').onclick = cardClicked;
-    // document.querySelector('#game-view').onclick = viewToggler;
-
+  const changeCardColorByView = () => {
+    const view = document.querySelector('#game-view');
+    const cards = document.querySelectorAll('.board-card');
+    if (view.innerHTML === "Go To Islander's View") {
+      cards.forEach(function(card){
+        card.style.backgroundColor = '#0E4A71';
+      });
+    } else if (view.innerHTML === "Go To Captain's View") {
+      cards.forEach(function(card){
+        if (card.classList.contains('blue')){
+          card.style.backgroundColor = '#4197E5';
+        } else if (card.classList.contains('green')){
+          card.style.backgroundColor = '#5F7511';
+        } else if (card.classList.contains('yellow')){
+          card.style.backgroundColor = '#F1AB5E';
+        } else if (card.classList.contains('red')){
+          card.style.backgroundColor = '#A54E4D';
+        };
+      });
+    }
+  }
