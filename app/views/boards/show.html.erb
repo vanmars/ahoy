@@ -16,7 +16,7 @@
 
 <main class="game-container">
   <% if @data.any? %>
-     <article id="islander-board" class="row row-cols-3 row-cols-sm-4" >
+     <article id="islander-board" class="row row-cols-3 row-cols-sm-4" style="display:none" >
       <% @data.each_with_index do |card, index| %>
         <% background = ""%>
         <% if card.color == "blue" %>
