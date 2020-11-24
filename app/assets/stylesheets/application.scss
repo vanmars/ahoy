@@ -5,11 +5,33 @@
 // font-family: 'Josefin Slab', serif;
 // font-family: 'Sail', cursive;
 
+// Fairwater Deco Serif Regular
+// font-family: fairwater-deco-serif, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Fairwater Open Serif Regular
+// font-family: fairwater-open-serif, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Fairwater Sailor Serif Regular
+// font-family: fairwater-sailor-serif, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Fairwater Solid Serif Regular
+// font-family: fairwater-solid-serif, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+
 // Colors
 // Yellow: #F1AB5E;
 // Blue: #4197E5;
 // Red: #A54E4D;
 // Green: #5F7511;
+// Light Green: #BED669;
 // Light Blue: #CAFDFF;
 // Navy Blue: #0E4A71
 
@@ -78,9 +100,11 @@
 /* Shared Header */
 #nav-header {
   color: #0E4A71;
-  font-size: 36px;
-  font-weight: bolder;
+  font-size: 48px;
   margin-top: 10px;
+  font-family: fairwater-deco-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #nav-name {

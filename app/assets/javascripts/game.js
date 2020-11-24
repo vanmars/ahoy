@@ -20,7 +20,6 @@
     };
   };
   
-  
   // 2. THE GAME DETECTS WHOSE TURN IT IS AND PRINTS IT TO THE SCREEN.
     // Define a variable called 'turn'.
   let turn = 'B';
@@ -68,6 +67,7 @@
   // 3. WHEN A USER CLICKS ON A CARD, THE CARD TURNS THE CORRECT COLOR.
       // Create Event Handlers
   const cardClicked = (ev) => {
+    console.log(ev)
     if (ev.target.className == 'blue') {            // If clicked div card has a blue class tag, it will turn blue.
       ev.target.style.backgroundColor = '#4197E5';
       flippedBlue.push(ev);                         // Append event to flippedBluelist.
@@ -125,25 +125,78 @@
 
   // 4. User can toggle the view
   const viewToggler = (ev) => {
-    console.log(ev.target)
+    if (ev.target.innerHTML === "See Islander's View") {
+      ev.target.innerHTML = "See Captain's View";
+    } else {
+      ev.target.innerHTML = "See Islander's View";
+    };
+    changeCardColorByView();
+  }
+
+  const changeCardColorByView = () => {
+    const view = document.querySelector('#game-view');
+    const cards = document.querySelectorAll('.board-card');
+    if (view.innerHTML === "See Islander's View") {
+      console.log("Captain's View");
+      console.log(cards[0])
+      cards.forEach(function(card){
+        card.style.backgroundColor = '#0E4A71';
+      });
+    } else if (view.innerHTML === "See Captain's View") {
+      console.log("Islander's View");
+      console.log(cards[0].className)
+      cards.forEach(function(card){
+        if (card.classList.contains('blue')){
+          card.style.backgroundColor = '#4197E5';
+        } else if (card.classList.contains('green')){
+          card.style.backgroundColor = '#5F7511';
+        } else if (card.classList.contains('yellow')){
+          card.style.backgroundColor = '#F1AB5E';
+        } else if (card.classList.contains('red')){
+          card.style.backgroundColor = '#A54E4D';
+        };
+      });
+    }
   }
   
       // Create Event Listeners
-  document.querySelector('#card0').onclick = cardClicked;
-  document.querySelector('#card1').onclick = cardClicked;
-  document.querySelector('#card2').onclick = cardClicked;
-  document.querySelector('#card3').onclick = cardClicked;
-  document.querySelector('#card4').onclick = cardClicked;
-  document.querySelector('#card5').onclick = cardClicked;
-  document.querySelector('#card6').onclick = cardClicked;
-  document.querySelector('#card7').onclick = cardClicked;
-  document.querySelector('#card8').onclick = cardClicked;
-  document.querySelector('#card9').onclick = cardClicked;
-  document.querySelector('#card10').onclick = cardClicked;
-  document.querySelector('#card11').onclick = cardClicked;
-  document.querySelector('#card12').onclick = cardClicked;
-  document.querySelector('#card13').onclick = cardClicked;
-  document.querySelector('#card14').onclick = cardClicked;
-  document.querySelector('#card15').onclick = cardClicked;
+  $(document).ready(function() {
+    console.log("Event listeners attached!")
+    $('#card0').click(cardClicked);
+    $('#card1').click(cardClicked);
+    $('#card2').click(cardClicked);
+    $('#card3').click(cardClicked);
+    $('#card4').click(cardClicked);
+    $('#card5').click(cardClicked);
+    $('#card6').click(cardClicked);
+    $('#card7').click(cardClicked);
+    $('#card8').click(cardClicked);
+    $('#card9').click(cardClicked);
+    $('#card10').click(cardClicked);
+    $('#card11').click(cardClicked);
+    $('#card12').click(cardClicked);
+    $('#card13').click(cardClicked);
+    $('#card14').click(cardClicked);
+    $('#card15').click(cardClicked);
+    $('#game-view').click(viewToggler);
+  });
 
-  document.querySelector('#game-view').onclick = viewToggler;
+
+    // document.querySelector('#card0').onclick = cardClicked;
+    // document.querySelector('#card1').onclick = cardClicked;
+    // document.querySelector('#card2').onclick = cardClicked;
+    // document.querySelector('#card3').onclick = cardClicked;
+    // document.querySelector('#card4').onclick = cardClicked;
+    // document.querySelector('#card5').onclick = cardClicked;
+    // document.querySelector('#card6').onclick = cardClicked;
+    // document.querySelector('#card7').onclick = cardClicked;
+    // document.querySelector('#card8').onclick = cardClicked;
+    // document.querySelector('#card9').onclick = cardClicked;
+    // document.querySelector('#card10').onclick = cardClicked;
+    // document.querySelector('#card11').onclick = cardClicked;
+    // document.querySelector('#card12').onclick = cardClicked;
+    // document.querySelector('#card13').onclick = cardClicked;
+    // document.querySelector('#card14').onclick = cardClicked;
+    // document.querySelector('#card15').onclick = cardClicked;
+    // document.querySelector('#game-view').onclick = viewToggler;
+
