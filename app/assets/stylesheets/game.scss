@@ -1,17 +1,11 @@
+// Navigation Bar
 .game-nav{
   background-color: #4197E5;
-}
-.game-container { 
-  background: url('island-view.png') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
 }
 
 .game-view-nav {
   color: white;
+  margin-top: 20px;
 }
 
 #islander-view {
@@ -28,4 +22,35 @@
 
 #turn-text {
   color: #CAFDFF;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+// Body
+.game-container { 
+  background: url('island-view.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+#board {
+  position: fixed;
+  top: 15vh;
+  left: 5vw;
+  margin-right: 15vw;
+}
+
+.board-card {
+  background-color: #0E4A71;
+  color: white;
+}
+
+.board-card:hover {
+  border: solid #F1AB5E 2px;
+  margin: -2px;
 }

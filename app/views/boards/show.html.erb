@@ -1,37 +1,34 @@
-<nav class="game-nav navbar navbar-expand-sm ">
+<header>
+  <nav class="game-nav navbar navbar-expand-sm ">
+    <div class="navbar-nav mr-auto">
+      <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
+      <p id="turn-text">Blue's Turn</p>
+    </div>
+    <div class="navbar-nav ml-auto game-view-nav">
+      <p id="islander-view">Islander View</p>
+      <p> | </p>
+      <p id="captain-view">Captain View</p>
+    </div>
+  </nav>
+</header>
 
-  <div class="navbar-nav mr-auto">
-    <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header" %>
-    <p id="turn-text">Blue's Turn</p>
-  </div>
+<main class="game-container">
+  <% if @data.any? %>
+    <article id="board" class="row row-cols-3 row-cols-sm-4" >
+      <% @data.each_with_index do |card, index| %>
 
-  <div class="navbar-nav ml-auto game-view-nav">
-    <p id="islander-view">Islander View</p>
-    <p> | </p>
-    <p id="captain-view">Captain View</p>
-  </div>
+        <section class="col mb-4">
+          <div class="board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="card<%= index %>">
+            <p class="card-text"><%= card.text %></p>
+          </div>
+        </section>
+      <% end %>
+      
 
-</nav>
 
-<div class="game-container">
-  <h1>Game Board</h1>
-  <p>Name: <%= @board.name %></p>
-  <% if @board.outlines.any? %>
-    <% @board.outlines.each do |outline| %>
-      <h2><%= outline.name %></h2>
-      <ul>
-        <li><%= outline.claim_1 %></li>
-        <li><%= outline.evidence_1a %></li>
-        <li><%= outline.evidence_1b %></li>
-        <li><%= outline.close_call_1 %></li>
-        <li><%= outline.red_herring_1 %></li>
-        <li><%= outline.claim_2 %></li>
-        <li><%= outline.evidence_2a %></li>
-        <li><%= outline.evidence_2b %></li>
-        <li><%= outline.close_call_2 %></li>
-        <li><%= outline.red_herring_2 %></li>
-      </ul>
-      <hr>
-    <% end %>
+    </article>
+  <% else %>
+    <p>There was an error. Please enter your outlines again. Make sure both outlines have the correct information stored!</p>
+    <%= link_to 'Play', new_board_path %>
   <% end %>
-</div>
+</main>
