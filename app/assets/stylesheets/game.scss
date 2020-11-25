@@ -6,6 +6,7 @@
 .game-view-nav {
   color: white;
   margin-top: 20px;
+  font-size: 18px;
 }
 
 #game-view:hover {
@@ -16,7 +17,7 @@
   // color: #CAFDFF;
   font-weight: bolder;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 24px;
   margin-left: 40px;
 }
 
@@ -32,14 +33,14 @@
 
 #board {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 5vw;
   margin-right: 15vw;
 }
 
 #islander-board {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 5vw;
   margin-right: 15vw;
 }

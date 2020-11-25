@@ -1,6 +1,10 @@
-<%= render 'shared/header' %> 
-<div class="registration-container row align-items-center justify-content-center">
-    <div class="registration-card card shadow-lg p-4 text-center w-50">
+<div class="registration-container d-flex flex-column align-items-center">
+  <br>
+  <div class="navbar-nav">
+    <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header"%>
+  </div>
+  <br>
+  <div class="registration-card card shadow-lg p-4 text-center w-50">
       <h2>Sign Up</h2>
       <br>
 
@@ -38,9 +42,6 @@
           <%= f.submit "Sign Up", class: "btn sign-up-btn-dark", id: "signup-btn" %>
         </div>
       <% end %>
-      <br>
-
       <%= render "devise/shared/links" %>
-
   </div>
 </div>

@@ -1,27 +1,33 @@
-<%= render 'shared/header' %> 
-<div class="board-container row align-items-center justify-content-center">
+<div class="board-container d-flex flex-column align-items-center">
+  <br>
+  <div class="navbar-nav">
+    <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header"%>
+  </div>
+  <br>
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Create New Game</h2>
     <%= render "shared/errors", :object => @board %>
     <br>
 
     <%= form_for @board do |f| %>
-    
-      <div class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control", style: "width: 50%" %>
+      <div class="field">
+        <%= f.label :name %><Br>
+        <%= f.text_field :name, placeholder:'Lord of the Flies' %>
       </div>
-  
-      <div class="form-group">
-        <%= f.label :outline_id_1 %>
-        <%= f.text_field :outline_id_1, class: "form-control", style: "width: 50%" %>
-      </div>
+      <br> 
 
-      <div class="form-group">
-        <%= f.label :outline_id_2 %>
-        <%= f.text_field :outline_id_2, class: "form-control", style: "width: 50%" %>
+      <div class="field">
+        <%= f.label :outline_id_1, 'Blue Team Outline ID' %><br>
+        <%= f.text_field :outline_id_1, placeholder:'123' %>
       </div>
-      
+      <br>
+
+      <div class="field">
+        <%= f.label :outline_id_2, 'Green Team Outline ID' %><br>
+        <%= f.text_field :outline_id_2, placeholder:'456' %>
+      </div>
+      <br> 
+
       <%= f.submit 'Start Game!', class: "btn w-25" %>
     <% end %>
 

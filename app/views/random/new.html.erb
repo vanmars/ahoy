@@ -1,6 +1,9 @@
-<%= render 'shared/header' %> 
-<div class="random-container row align-items-center justify-content-center">
-
+<div class="random-container d-flex flex-column align-items-center">
+  <br>
+  <div class="navbar-nav">
+    <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "nav-header"%>
+  </div>
+  <br>
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Generate a Random Game</h2>
     <br>

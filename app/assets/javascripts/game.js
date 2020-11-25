@@ -11,9 +11,11 @@ $(document).ready(function() {
   // Define a variable called 'turn'.
   let turn;
   if ($('#turn-text').html() === "Blue's Turn"){
-    turn = 'B'
+    turn = 'B';
+    document.querySelector('#turn-text').style.color = "#CAFDFF";
   } else {
-    turn = 'G'
+    turn = 'G';
+    document.querySelector('#turn-text').style.color = "#BED669";
   }
   
   //When the blue count list length equals four, cue blue win scenario page.
@@ -43,6 +45,7 @@ $(document).ready(function() {
         } else {
           turn = 'G';
           document.querySelector('#turn-text').innerHTML = "Green's Turn";
+          document.querySelector('#turn-text').style.color = "#BED669";
           clickTracker = [];
         };
   
@@ -50,6 +53,7 @@ $(document).ready(function() {
       // Change turn to G, change screen text,  and reset ClickTracker.
       turn = 'G';
       document.querySelector('#turn-text').innerHTML = "Green's Turn";
+      document.querySelector('#turn-text').style.color = "#BED669";
       clickTracker = [];
   
     } else if (turn == 'G' && clickTracker.length < 2) {  // If turn is green, and it is the first turn.
@@ -60,12 +64,14 @@ $(document).ready(function() {
         } else {
         turn = 'B';
         document.querySelector('#turn-text').innerHTML = "Blue's Turn";
+        document.querySelector('#turn-text').style.color = "#CAFDFF";
         clickTracker = [];
         }
   
     } else { // If turn is green, and it is the second turn.
       turn = 'B';
       document.querySelector('#turn-text').innerHTML = "Blue's Turn";
+      document.querySelector('#turn-text').style.color = "#CAFDFF";
       clickTracker = [];
     };
   };
@@ -73,12 +79,6 @@ $(document).ready(function() {
   // 3. WHEN A USER CLICKS ON A CARD, THE CARD TURNS THE CORRECT COLOR.
       // Create Event Handlers
   const cardClicked = (ev) => {
-    console.log(ev)
-    console.log(ev.target.classList)
-    console.log(ev.target.parentNode.classList)
-    console.log(ev.target.style)
-    console.log(ev.target.parentNode.style)
-
     if (ev.target.classList.contains('blue')) {           
       ev.target.style.backgroundColor = '#4197E5';
       flippedBlue.push(ev);                        

@@ -2,11 +2,9 @@
 .registration-container {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(69,163,227,1) 100%);
+  height: 105vh;
 }
 
-.registration-card {
-  margin-top: 10vh;
-}
 
 #signup-btn, #signin-btn, #random-btn {
   padding: 5px 0px;
@@ -23,13 +21,19 @@
 .login-container {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,171,94,1) 100%);
+  height: 100vh;
 }
 
 // Random
 .random-container {
   background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(165,78,77,1) 50%); 
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(165,78,77,1) 50%); 
+  height: 100vh;
 }
 
-
 // Play
+.board-container {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(95,117,17,1) 100%);
+  height: 100vh;
+}
