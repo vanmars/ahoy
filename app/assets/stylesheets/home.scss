@@ -1,3 +1,58 @@
-.splash-container { 
+#splash-image-top { 
   height: 100vh;
+}
+
+#nav-name {
+  color: #0E4A71;
+  font-weight: bolder;
+}
+
+#splash-tagline {
+  background-color:#CAFDFF;
+  height: 5vh;
+}
+
+#splash-tagline h1 {
+  color: #0E4A71;
+  font-weight: bolder;
+  font-size: 20px;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+#directions {
+  background-color:#CAFDFF;
+}
+
+#directions h1 {
+  font-family: fairwater-open-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0E4A71;
+}
+
+.card-img-top {
+  height: 35vw;
+}
+
+#theory {
+  background-color:white;
+  overflow-x: hidden;
+  height: 75vh;
+}
+
+#theory .card {
+  max-width: 50vw;
+  margin-left: 100px;
+}
+
+#theory h1 {
+  font-family: fairwater-solid-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0E4A71
+}
+
+#classroom-img {
+  width: 40vw;
 }
