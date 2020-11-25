@@ -38,7 +38,7 @@
 #theory {
   background-color:white;
   overflow-x: hidden;
-  height: 75vh;
+  min-height: 75vh;
 }
 
 #theory .card {
@@ -54,5 +54,5 @@
 }
 
 #classroom-img {
-  width: 40vw;
+  width: 50vw;
 }

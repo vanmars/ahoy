@@ -19,12 +19,14 @@
       <div class="card shadow">
         <%= image_tag "outline.png", class:"card-img-top", alt:"" %>
         <div class="card-body">
+          <h2 class="card-title">Outline</h2>
           <p class="card-text">Sign in to add an outline you want to workshop. (Ahoy! currently support outlines for essays with two body paragraphs and two pieces of evidence each. Be sure to remember the ouline id.)</p>
         </div>
       </div>
       <div class="card shadow">
         <%= image_tag "play.png", class:"card-img-top", alt:"" %>
         <div class="card-body">
+          <h2 class="card-title">Enter ID</h2>
           <p class="card-text">Find an opponent to play  against, and press 'Play'!</p>
           <p class="card-text">On the form that follows, enter the outline id's for your paper and that of your opponent.</p>
         </div>
@@ -32,8 +34,9 @@
       <div class="card shadow">
         <%= image_tag "board.png", class:"card-img-top", alt:"" %>
         <div class="card-body">
+          <h2 class="card-title">Play!</h2>
           <p class="card-text">Give your teammates clues in the forms of argumentative claims to see if they can guess the evidence you've selected.</p>
-          <p class="card-text"><small class="text-muted">
+          <p class="card-text">
             <%= link_to 'Click here for game rules', home_directions_path %>
           </small></p>
         </div>
@@ -43,20 +46,20 @@
 
   <section id="theory" class="p-5 d-flex align-items-center">
     <div class="card mb-3 border-0">
-      <div class="row no-gutters">
-        <div class="col-md-8">
+      <%# <div class="row no-gutters"> %>
+        <div class="col-lg-6">
           <div class="card-body">
             <h1 class="card-title">Learning Theory</h1>
             <p class="card-text">Ahoy! was created by a former teacher and learning scientist. Check the link below to read more about the theory behind the game design! </p>
-            <p class="card-text"><small class="text-muted">
+            <p class="card-text">
               <%= link_to 'About', home_about_path %>
             </small></p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-6">
           <%= image_tag 'classroom.jpg', class:"card-img", id:"classroom-img", alt:"" %>
         </div>
-      </div>
+      <%# </div> %>
     </div>
   </section>
 </main>
