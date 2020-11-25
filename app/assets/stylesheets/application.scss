@@ -1,45 +1,11 @@
 // *= require_tree .
 // *= require_self
 
-// Fonts
-// font-family: 'Josefin Slab', serif;
-// font-family: 'Sail', cursive;
-
-// Fairwater Deco Serif Regular
-// font-family: fairwater-deco-serif, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Fairwater Open Serif Regular
-// font-family: fairwater-open-serif, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Fairwater Sailor Serif Regular
-// font-family: fairwater-sailor-serif, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Fairwater Solid Serif Regular
-// font-family: fairwater-solid-serif, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-
-// Colors
-// Yellow: #F1AB5E;
-// Blue: #4197E5;
-// Red: #A54E4D;
-// Green: ##5F7511;
-// Light Green: #BED669;
-// Light Blue: #CAFDFF;
-// Navy Blue: #0E4A71
-
 html {
   box-sizing: border-box;
 }
 
-* {
+*, *:before, *:after {
   font-family: 'Josefin Slab', serif;
   box-sizing: inherit;
 }
@@ -50,17 +16,17 @@ body {
 }
 
  /* Global Buttons */
- .btn {
-   border-radius: 25px;
-   padding: 0px;
-   width: 100px;
-   box-shadow: 4px 5px 5px;
-   font-size: 14px;
- }
+.btn {
+  border-radius: 25px;
+  padding: 0px;
+  width: 100px;
+  box-shadow: 4px 5px 5px;
+  font-size: 14px;
+}
 
- .btn:hover {
-   color: #0E4A71;
- }
+.btn:hover {
+  color: #0E4A71;
+}
 
 .sign-in-btn-dark {
   background-color: #F1AB5E;
@@ -101,13 +67,13 @@ body {
   border: solid 2px #5F7511;
 }
 
-// Button Text
+// Global Links
 .nav-link {
   color: white;
   font-weight: bolder; 
 }
 
-/* Shared Header */
+/* Shared Headers */
 .splash-nav{
   margin-top: -10px;
   margin-bottom: -10px;
@@ -119,8 +85,10 @@ body {
   color: #0E4A71;
   font-size: 64px;
   margin-top: 1vw;
-  margin-right: 20px;
-  font-family: fairwater-deco-serif, sans-serif;
+  // font-family: fairwater-deco-serif, sans-serif;
+  // font-family: fairwater-open-serif, sans-serif;
+  font-family: fairwater-sailor-serif, sans-serif;
+  // font-family: fairwater-solid-serif, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -129,6 +97,7 @@ body {
   color: #0E4A71;
   font-size: 36px;
   // margin-top: 10px;
+  // font-family: fairwater-sailor-serif, sans-serif;
   font-family: fairwater-deco-serif, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -144,4 +113,10 @@ body {
 // Shared Footer
 .footer {
   margin-bottom: -10px;
+  background-color: #4197E5;
+}
+
+#copyright {
+  color: white;
+  margin-top: 15px;
 }
