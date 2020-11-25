@@ -59,37 +59,11 @@ class BoardsController < ApplicationController
     render :show
   end
 
-
-  
-
-
-  
-  def index
-    @boards = Board.all 
-    render :index
-  end
-
-  def edit
-    @board = Board.find(params[:id])
-    render :edit
-  end
-
-  def update
-    @board = Board.find(params[:id])
-    if @board.update(board_params)
-      flash[:notice] = "Board successfully updated!"
-      redirect_to board_path(@board)
-    else  
-      flash[:alert] = "There was an error. Please try again."
-      render :edit
-    end
-  end
-
   def destroy
     @board = Board.find(params[:id])
     @board.destroy
     flash[:notice] = "Board successfully deleted!"
-    redirect_to outlines_path
+    redirect_to home_index_path
   end
 
 private

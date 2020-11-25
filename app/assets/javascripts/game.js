@@ -1,28 +1,18 @@
 $(document).ready(function() {
-// GAME DETECTS A WIN SCENARIO
-  // Create Lists to track when flipped blue cards and flipped green cards occur.
-  // Use the cardClicked function below to append each list.
-  let flippedBlue = [];
-  let flippedGreen = [];
-
-  // Define variable to track mouse click.
-  let clickTracker = [];
-
-  // Define a variable called 'turn'.
-  let turn;
-  if ($('#turn-text').html() === "Blue's Turn"){
-    turn = 'B';
-    document.querySelector('#turn-text').style.color = "#CAFDFF";
-  } else {
-    turn = 'G';
-    document.querySelector('#turn-text').style.color = "#BED669";
-  }
-  
+  // 1. GAME DETECTS A WIN SCENARIO
   //When the blue count list length equals four, cue blue win scenario page.
   const blueWin = () => {
     if (flippedBlue.length == 4) {
       console.log("Blue wins!")
-      // window.location = 'blueWin.html';
+      // Hide nav bar, and game board
+      $('.game-nav').hide();
+      $('#board').hide();
+      // Change background image
+      $('.game-container').css("background", "url('win.jpg') no-repeat center center fixed"); 
+      // Make the win-card appear
+      $('#win-para').append("Blue wins!");
+      $('#win-para').css("color", "#CAFDFF")
+      $('#win-card').show();
     };
   };
   
@@ -30,8 +20,16 @@ $(document).ready(function() {
   const greenWin = () => {
     if (flippedGreen.length == 4) {
       console.log("Green wins!")
-      // window.location = 'greenWin.html';
-    };
+       // Hide nav bar, and game board
+       $('.game-nav').hide();
+       $('#board').hide();
+       // Change background image
+       $('.game-container').css("background", "url('win.jpg') no-repeat center center fixed"); 
+       // Make the win-card appear
+       $('#win-para').append("Green wins!");
+       $('#win-para').css("color", "#BED669")
+       $('#win-card').show();
+     };
   };
   
   // 2. THE GAME DETECTS WHOSE TURN IT IS AND PRINTS IT TO THE SCREEN.
@@ -48,14 +46,12 @@ $(document).ready(function() {
           document.querySelector('#turn-text').style.color = "#BED669";
           clickTracker = [];
         };
-  
     } else if (turn == 'B' && clickTracker.length == 2) { // If turn is blue, and it is the second turn.
       // Change turn to G, change screen text,  and reset ClickTracker.
       turn = 'G';
       document.querySelector('#turn-text').innerHTML = "Green's Turn";
       document.querySelector('#turn-text').style.color = "#BED669";
       clickTracker = [];
-  
     } else if (turn == 'G' && clickTracker.length < 2) {  // If turn is green, and it is the first turn.
         // If first click is a green, it remains green's turn.
         if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green')) {
@@ -67,7 +63,6 @@ $(document).ready(function() {
         document.querySelector('#turn-text').style.color = "#CAFDFF";
         clickTracker = [];
         }
-  
     } else { // If turn is green, and it is the second turn.
       turn = 'B';
       document.querySelector('#turn-text').innerHTML = "Blue's Turn";
@@ -129,24 +124,39 @@ $(document).ready(function() {
       $('#islander-board').show();
     }
   }
+
+
+  // Create Lists to track when flipped blue cards and flipped green cards occur. Use the cardClicked function above to append each list.
+  let flippedBlue = [];
+  let flippedGreen = [];
+  // Define variable to track mouse click.
+  let clickTracker = [];
+  // Define a variable called 'turn'.
+  let turn;
+  if ($('#turn-text').html() === "Blue's Turn"){
+    turn = 'B';
+    document.querySelector('#turn-text').style.color = "#CAFDFF";
+  } else {
+    turn = 'G';
+    document.querySelector('#turn-text').style.color = "#BED669";
+  }
   
-    // Event Listeners
-    console.log("Event listeners attached!")
-    $('#card0').click(cardClicked);
-    $('#card1').click(cardClicked);
-    $('#card2').click(cardClicked);
-    $('#card3').click(cardClicked);
-    $('#card4').click(cardClicked);
-    $('#card5').click(cardClicked);
-    $('#card6').click(cardClicked);
-    $('#card7').click(cardClicked);
-    $('#card8').click(cardClicked);
-    $('#card9').click(cardClicked);
-    $('#card10').click(cardClicked);
-    $('#card11').click(cardClicked);
-    $('#card12').click(cardClicked);
-    $('#card13').click(cardClicked);
-    $('#card14').click(cardClicked);
-    $('#card15').click(cardClicked);
-    $('#game-view').click(viewToggler);
-  });
+  // Event Listeners
+  $('#card0').click(cardClicked);
+  $('#card1').click(cardClicked);
+  $('#card2').click(cardClicked);
+  $('#card3').click(cardClicked);
+  $('#card4').click(cardClicked);
+  $('#card5').click(cardClicked);
+  $('#card6').click(cardClicked);
+  $('#card7').click(cardClicked);
+  $('#card8').click(cardClicked);
+  $('#card9').click(cardClicked);
+  $('#card10').click(cardClicked);
+  $('#card11').click(cardClicked);
+  $('#card12').click(cardClicked);
+  $('#card13').click(cardClicked);
+  $('#card14').click(cardClicked);
+  $('#card15').click(cardClicked);
+  $('#game-view').click(viewToggler);
+});

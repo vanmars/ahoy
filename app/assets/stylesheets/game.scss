@@ -1,12 +1,18 @@
 // Navigation Bar
 .game-nav{
   background-color: #4197E5;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
+.game-nav .nav-brand {
+  margin-bottom: 0;
+} 
 
 .game-view-nav {
   color: white;
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 14px;
+  font-size: 18px; 
 }
 
 #game-view:hover {
@@ -17,7 +23,7 @@
   // color: #CAFDFF;
   font-weight: bolder;
   font-size: 20px;
-  margin-top: 24px;
+  margin-top: 14px;
   margin-left: 40px;
 }
 
@@ -54,3 +60,19 @@
   border: solid #F1AB5E 2px;
   margin: -2px;
 }
+
+// Win Scenario
+#win-card{
+  display: none;
+  background-color: #0E4A71;
+  color: white;
+}
+
+// #win-div{
+
+// }
+
+#win-para{
+  font-size: 50px
+}
+
