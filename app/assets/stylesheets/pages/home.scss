@@ -1,19 +1,21 @@
+@import 'abstracts/variables';
+
 #splash-image-top { 
   height: 100vh;
 }
 
 #nav-name {
-  color: #0E4A71;
+  color:$navy-blue;
   font-weight: bolder;
 }
 
 #splash-tagline {
-  background-color:#CAFDFF;
+  background-color:$light-blue;
   height: 5vh;
 }
 
 #splash-tagline h1 {
-  color: #0E4A71;
+  color: $navy-blue;
   font-weight: bolder;
   font-size: 20px;
   font-style: italic;
@@ -21,14 +23,14 @@
 }
 
 #directions {
-  background-color:#CAFDFF;
+  background-color:$light-blue;
 }
 
 #directions h1 {
   font-family: fairwater-open-serif, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #0E4A71;
+  color: $navy-blue;
 }
 
 .card-img-top {
@@ -50,7 +52,7 @@
   font-family: fairwater-solid-serif, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #0E4A71
+  color: $navy-blue;
 }
 
 #classroom-img {

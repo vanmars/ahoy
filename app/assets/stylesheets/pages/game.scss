@@ -1,6 +1,8 @@
+@import 'abstracts/variables';
+
 // Navigation Bar
 .game-nav{
-  background-color: #4197E5;
+  background-color: $blue;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -20,7 +22,6 @@
 }
 
 #turn-text {
-  // color: #CAFDFF;
   font-weight: bolder;
   font-size: 20px;
   margin-top: 14px;
@@ -52,27 +53,22 @@
 }
 
 .board-card {
-  background-color: #0E4A71;
+  background-color: $navy-blue;
   color: white;
 }
 
 .board-card:hover {
-  border: solid #F1AB5E 2px;
+  border: solid $yellow 2px;
   margin: -2px;
 }
 
 // Win Scenario
 #win-card{
   display: none;
-  background-color: #0E4A71;
+  background-color:$navy-blue;
   color: white;
 }
-
-// #win-div{
-
-// }
 
 #win-para{
   font-size: 50px
 }
-
