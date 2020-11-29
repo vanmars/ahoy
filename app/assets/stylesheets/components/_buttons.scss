@@ -1,0 +1,50 @@
+.btn {
+  border-radius: 25px;
+  padding: 0px;
+  width: 100px;
+  box-shadow: 4px 5px 5px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  color: $navy-blue;
+}
+
+.sign-in-btn-dark {
+  background-color: $yellow;
+}
+
+.sign-in-btn-light {
+  background-color: white;
+  color: $yellow;
+}
+
+.sign-up-btn-dark, .sign-out-btn-dark {
+  background-color: $blue
+}
+
+.sign-up-btn-light, .sign-out-btn-light {
+  background-color: white;
+  color: $blue;
+  font-weight: bolder;
+  border: solid 2px $blue; 
+}
+
+.random-btn-dark {
+  background-color: $red;
+}
+
+.random-btn-light {
+  background-color: white;
+  color: $red;
+}
+
+.play-btn-dark {
+  background-color: $green;
+}
+
+.play-btn-light {
+  background-color: white;
+  color: $green;
+  border: solid 2px $green;
+}

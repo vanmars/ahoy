@@ -1,0 +1,30 @@
+$font-text: 'Josefin Slab', serif;
+$font-header: 'Sail', cursive;
+
+@mixin logo-fancy {
+  // Fairwater Deco Serif Regular
+  font-family: fairwater-deco-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin logo-sailor {
+  // Fairwater Sailor Serif Regular
+  font-family: fairwater-sailor-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin logo-open {
+  // Fairwater Open Serif Regular
+  font-family: fairwater-open-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin logo-solid {
+  // Fairwater Solid Serif Regular
+  font-family: fairwater-solid-serif, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

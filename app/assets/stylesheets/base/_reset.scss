@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  font-family: 'Josefin Slab', serif;
+  box-sizing: inherit;
+}
+
+body { 
+  background: url('help.jpg') no-repeat center center fixed; 
+  background-size: cover;
+}

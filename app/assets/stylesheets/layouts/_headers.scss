@@ -1,0 +1,19 @@
+.splash-nav{
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#nav-header {
+  color: $navy-blue;
+  font-size: 64px;
+  margin-top: 1vw;
+  @include logo-sailor
+}
+
+#game-nav-header {
+  color: $navy-blue;
+  font-size: 36px;
+  @include logo-fancy;
+}
