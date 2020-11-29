@@ -1,18 +1,70 @@
+@import 'abstracts/variables';
+@import 'base/typography';
+
 .outlines-container { 
   background: url('water.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 93vh;
+  overflow-x: hidden;
 }
 
 .outlines {
-  height: 60vh;
+  // height: 60vh;
   background-color: white;
   overflow-y: scroll;
+  margin-top: 5vh;
+  padding: 50px 30px 50px;
 }
 
-.outlines-header {
-  height: 15vh;
+#outline-nav-header {
+  @include logo-solid;
+  font-size: 64px;
+  color: $navy-blue;
+}
+
+.outline-play-btn {
+  color: $navy-blue;
+}
+
+.outline-signout-btn:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.outline-play-btn:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+#outline-add-btn{
+  background-color: $yellow;
+  width: 150px;
+  border-radius: 25px;
+  display:inline-block;
+  justify-content: center;
+  border: none;
+  padding: 5px;
+}
+
+#outline-add-btn:hover{
+  box-shadow: 4px 5px 5px;
+  color: $navy-blue;
+}
+
+#outline-add-link{
+  color:white;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+#outline-add-link:hover {
+  color: $navy-blue;
+  text-decoration: none;
+}
+
+.outlines td {
+  background-color: $light-blue;
 }

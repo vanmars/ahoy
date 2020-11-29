@@ -1,34 +1,53 @@
 <div class="outlines-container">
-  <div class="outlines-header">
-  </div>
+  <header  class="outlines-header">
+    <nav class="outline-nav navbar navbar-expand-md">
+      <div class="splash-brand-nav navbar-nav">
+        <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "outline-nav-header" %>
+      </div>
+      <div class="splash-buttons-nav navbar-nav ml-auto">
+        <button class="outline-play-btn btn mr-3 mt-3 sign-out-btn-light"><%= link_to 'Play', new_board_path, class: "nav-link outline-play-btn" %></button>
+        <button class="outline-signout-btn btn mr-3 mt-3 sign-out-btn-dark"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link"%></button>
+      </div> 
+    </nav>
+  </header>
+  <main>
+    <div class="outlines row d-flex">
+      <div class="col-sm-4">
+        <h1>Outlines</h1>
+        <button id="outline-add-btn"><%= link_to "Add an Outline", new_outline_path, id:"outline-add-link" %></button>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-1"></div>
 
-  <div class="outlines p-4 row">
-    <div class="col-6-sm">
-      <h1>My Outlines</h1>
-      <p><%= link_to "Add an outline", new_outline_path %></p>
-      <p><%= link_to "Return to Ahoy Page", home_index_path %></p>
-    </div>
-
-    <div class="col-6-sm">
-      <% if @outlines.any? %>
-        <h4>Here are my outlines:</h4>
-        <% @outlines.each do |outline| %>
-          <ul>
-            <li>
-              <%= link_to outline.name, outline_path(outline) %>
-            </li>
-          </ul>
+      <div class="col-sm-7">
+        <% if @outlines.any? %>
+          <h4>Here are my outlines:</h4>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Name</th>
+                <th>ID #</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @outlines.each do |outline| %>
+                <tr>
+                  <td><%= link_to outline.name, outline_path(outline) %></td>
+                  <td><%= outline.id %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        <% else %>
+          <p>You have no outlines saved.</p>
         <% end %>
-      <% else %>
-        <p>You have no outlines saved.</p>
-      <% end %>
+      </div>
+
     </div>
-
-    <hr>
-    
-    
-
-    
-  </div>
+  </main>
 </div>
-<%= render 'shared/footer' %>
+
+<footer>
+  <%= render 'shared/footer' %>
+</footer>
