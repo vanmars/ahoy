@@ -1,15 +1,5 @@
 <div class="outlines-container">
-  <header  class="outlines-header">
-    <nav class="outline-nav navbar navbar-expand-md">
-      <div class="splash-brand-nav navbar-nav">
-        <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "outline-nav-header" %>
-      </div>
-      <div class="splash-buttons-nav navbar-nav ml-auto">
-        <button class="outline-play-btn btn mr-3 mt-3 sign-out-btn-light"><%= link_to 'Play', new_board_path, class: "nav-link outline-play-btn" %></button>
-        <button class="outline-signout-btn btn mr-3 mt-3 sign-out-btn-dark"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link"%></button>
-      </div> 
-    </nav>
-  </header>
+  <%= render 'shared/outlines_header' %>
   <main>
     <div class="outlines row d-flex">
       <div class="col-sm-4">
@@ -19,7 +9,6 @@
         <br>
       </div>
       <div class="col-sm-1"></div>
-
       <div class="col-sm-7">
         <% if @outlines.any? %>
           <h4>Here are my outlines:</h4>
@@ -47,7 +36,4 @@
     </div>
   </main>
 </div>
-
-<footer>
-  <%= render 'shared/footer' %>
-</footer>
+<%= render 'shared/footer' %>
