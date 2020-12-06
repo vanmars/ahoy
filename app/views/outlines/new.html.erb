@@ -1,4 +1,23 @@
-<%= render "shared/errors", :object => @outline %>
-<h1>Create a New Outline</h1>
-<%= render "shared/outline_form" %>
+<div class="outlines-container">  
+  <%= render "shared/errors", :object => @outline %>
+  <header>
+    <%= render 'shared/outlines_header' %>
+  </header>
+  <main>
+    <div class="new-outline row d-flex justify-content-center align-items-center">
+      <div class="card shadow bg-white w-75 p-4">
+        <h1>Create a New Outline</h1>
+        <hr>
+        <%= render "shared/outline_form" %>
+      </div>
+    </div>
+  </main>
+  <br>
+</div>
+<footer>
+  <%= render 'shared/footer' %>
+</footer>
+
+
+
 

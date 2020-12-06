@@ -1,58 +1,66 @@
 <%= form_for @outline do |f| %>
   <div class="form-group">
     <%= f.label :name %>
-    <%= f.text_field :name, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :name, class: "form-control", style: "width: 90%" %>
   </div>
-  
+
+  <br>
+  <br>
+
   <div class="form-group">
-    <%= f.label :claim_1 %>
-    <%= f.text_field :claim_1, class: "form-control", style: "width: 50%" %>
+    <%= f.label :claim_1, 'CLAIM 1' %>
+    <%= f.text_field :claim_1, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :evidence_1a %>
-    <%= f.text_field :evidence_1a, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :evidence_1a, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :evidence_1b %>
-    <%= f.text_field :evidence_1b, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :evidence_1b, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :close_call_1 %>
-    <%= f.text_field :close_call_1, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :close_call_1, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :red_herring_1 %>
-    <%= f.text_field :red_herring_1, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :red_herring_1, class: "form-control", style: "width: 90%" %>
   </div>
 
+  <br>
+  <br>
+  
   <div class="form-group">
-    <%= f.label :claim_2 %>
-    <%= f.text_field :claim_2, class: "form-control", style: "width: 50%" %>
+    <%= f.label :claim_2, 'CLAIM 2' %>
+    <%= f.text_field :claim_2, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :evidence_2a %>
-    <%= f.text_field :evidence_2a, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :evidence_2a, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :evidence_2b %>
-    <%= f.text_field :evidence_2b, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :evidence_2b, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :close_call_2 %>
-    <%= f.text_field :close_call_2, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :close_call_2, class: "form-control", style: "width: 90%" %>
   </div>
 
   <div class="form-group">
     <%= f.label :red_herring_2 %>
-    <%= f.text_field :red_herring_2, class: "form-control", style: "width: 50%" %>
+    <%= f.text_field :red_herring_2, class: "form-control", style: "width: 90%" %>
   </div>
 
-  <%= f.submit 'Submit', class: "btn w-25" %>
+  <div class="form-group d-flex justify-content-center">
+    <%= f.submit 'Submit', class: "btn outline-submit-btn" %>
+  </div>
 <% end %>

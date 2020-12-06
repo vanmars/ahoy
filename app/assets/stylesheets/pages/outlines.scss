@@ -68,3 +68,15 @@
 .outlines td {
   background-color: $light-blue;
 }
+
+// New Outlines
+.new-outline h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.outline-submit-btn {
+  background-color: $yellow;
+  color: white;
+  padding: 5px 0;
+}
