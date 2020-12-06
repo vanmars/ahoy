@@ -1,0 +1,24 @@
+@import 'abstracts/variables';
+@import 'base/typography';
+
+.account .card {
+  background-color: $light-blue;
+  width: 65%;
+}
+
+.account h1 {
+  text-align: center;
+}
+
+.account h2 {
+  font-size: 26px;
+}
+
+.account a {
+  align-self: center;
+}
+
+// .footer {
+//   position:fixed;
+//   top: 90vh;
+// }

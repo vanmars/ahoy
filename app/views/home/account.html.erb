@@ -1,2 +1,21 @@
-<%= render 'shared/header' %> 
-<h1>Account Profile</h1>
+<header>
+  <%= render 'shared/header' %> 
+</header>
+<br>
+<main>
+  <div class="account row justify-content-center">
+    <div class="card shadow p-4">
+      <h1>Account Profile</h1>
+      <hr>
+      <h2>Name</h2>
+      <p> <%= @user.name%> </p>
+      <h2>Email</h2>
+      <p> <%= @user.email%> </p>
+      <hr>
+      <%= link_to 'Edit account details', edit_user_registration_path %>
+    </div>
+  </div>
+</main>
+<footer>
+  <%= render 'shared/footer'%> 
+</footer>

@@ -8,13 +8,17 @@
   font-size: 64px;
 }
 
-#signup-btn, #signin-btn, #random-btn {
+#signup-btn, #signin-btn, #random-btn, #update-account-btn, #cancel-account-btn {
   padding: 5px 0px;
   color: white;
   font-weight: bolder;
 }
 
-#signup-btn:hover, #signin-btn:hover, #random-btn:hover {
+#cancel-account-btn {
+  width: 150px;
+}
+
+#signup-btn:hover, #signin-btn:hover, #random-btn:hover, #update-account-btn:hover, #cancel-account-btn:hover {
   border: solid  $navy-blue 1px;
   color:$navy-blue;
 }
@@ -23,9 +27,8 @@
 .registration-container {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(69,163,227,1) 100%);
-  height: 105vh;
+  height: 125vh;
 }
-
 
 // Log In
 .login-container {
