@@ -69,8 +69,8 @@
   background-color: $light-blue;
 }
 
-// New Outlines
-.new-outline h1 {
+// New and Edit Outlines
+.outline h1 {
   font-size: 32px;
   text-align: center;
 }
@@ -79,4 +79,28 @@
   background-color: $yellow;
   color: white;
   padding: 5px 0;
+}
+
+.outline label {
+  color: $navy-blue;
+  @include logo-solid;
+}
+
+// Show Outline
+.outline p:first-of-type {
+  text-align: center;
+}
+
+.outline h2 {
+  font-size: 26px;
+  color: $navy-blue;
+}
+
+.outline .nav {
+  justify-content: space-around;
+}
+
+.outline span {
+  @include logo-solid;
+  color: $navy-blue;
 }

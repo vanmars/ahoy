@@ -1,31 +1,46 @@
-<h1>Name: <%= @outline.name %></h1>
-<p>ID: <%= @outline.id %></p>
-<hr>
+<div class="outlines-container">  
+  <%= render "shared/errors", :object => @outline %>
+  <header>
+    <%= render 'shared/outlines_header' %>
+  </header>
+  <main>
+    <div class="outline row d-flex justify-content-center align-items-center">
+      <div class="card shadow bg-white w-75 p-4">
+        <h1><%= @outline.name %></h1>
+        <p><span>Outline Id:</span> <%= @outline.id %></p>
+        <hr>
+        <h2>Claim 1</h2>
+        <p><%= @outline.claim_1 %></p>
+        <hr>
+        <p><span>Evidence 1a:</span> <%= @outline.evidence_1a %> </p>
+        <p><span>Evidence 1b:</span> <%= @outline.evidence_1b %> </p>
+        <p><span>Close Call 1:</span> <%= @outline.close_call_1 %> </p>
+        <p><span>Red Herring 1:</span> <%= @outline.red_herring_1 %> </p>
+        <hr>
+        <br>
+        <h2>Claim 2</h2>
+        <p><%= @outline.claim_2 %> </p>
+        <hr>
+        <p><span>Evidence 2a:</span> <%= @outline.evidence_2a %> </p>
+        <p><span>Evidence 2b:</span> <%= @outline.evidence_2b %> </p>
+        <p><span>Close Call 2:</span> <%= @outline.close_call_2 %> </p>
+        <p><span>Red Herring 2:</span> <%= @outline.red_herring_2 %> </p>
+        <hr>
+        <br>
 
-<h2>Claim 1</h2>
-<p><%= @outline.claim_1 %></p>
-<hr>
-<p>Evidence 1a: <%= @outline.evidence_1a %> </p>
-<p>Evidence 1b: <%= @outline.evidence_1b %> </p>
-<p>Close Call 1: <%= @outline.close_call_1 %> </p>
-<p>Red Herring 1: <%= @outline.red_herring_1 %> </p>
-<hr>
-<br>
+        <nav class="nav d-flex">
+          <p><%= link_to "Return to outlines", outlines_path %></p>
+          <p><%= link_to "Edit outline", edit_outline_path(@outline) %></p>
+          <p><%= link_to "Delete outline", outline_path(@outline),
+                                  :data => {:confirm => "Are you sure?",
+                                                :method => "delete"}, style: 'color:red' %></p>
 
-<h2>Claim 2</h2>
-<p><%= @outline.claim_2 %> </p>
-<hr>
-<p>Evidence 2a: <%= @outline.evidence_2a %> </p>
-<p>Evidence 2b: <%= @outline.evidence_2b %> </p>
-<p>Close Call 2: <%= @outline.close_call_2 %> </p>
-<p>Red Herring 2: <%= @outline.red_herring_2 %> </p>
-<hr>
-<br>
-
-
-<p><%= link_to "Edit Outline", edit_outline_path(@outline) %></p>
-<p><%= link_to "Delete outline", outline_path(@outline),
-                        :data => {:confirm => "Are you sure?",
-                                       :method => "delete"} %></p>
-
-<p><%= link_to "Return to outlines", outlines_path %></p>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <br>
+</div>
+<footer>
+  <%= render 'shared/footer' %>
+</footer>

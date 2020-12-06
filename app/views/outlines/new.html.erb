@@ -4,11 +4,12 @@
     <%= render 'shared/outlines_header' %>
   </header>
   <main>
-    <div class="new-outline row d-flex justify-content-center align-items-center">
+    <div class="outline row d-flex justify-content-center align-items-center">
       <div class="card shadow bg-white w-75 p-4">
         <h1>Create a New Outline</h1>
         <hr>
         <%= render "shared/outline_form" %>
+        <p><%= link_to "Return to outlines", outlines_path %></p>
       </div>
     </div>
   </main>
@@ -17,7 +18,3 @@
 <footer>
   <%= render 'shared/footer' %>
 </footer>
-
-
-
-

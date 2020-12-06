@@ -1,3 +1,24 @@
-<%= render "shared/errors", :object => @outline %>
-<h1>Update <%= @outline.name %> </h1>
-<%= render "shared/outline_form" %>
+<div class="outlines-container">  
+  <%= render "shared/errors", :object => @outline %>
+  <header>
+    <%= render 'shared/outlines_header' %>
+  </header>
+  <main>
+    <div class="outline row d-flex justify-content-center align-items-center">
+      <div class="card shadow bg-white w-75 p-4">
+        <h1>Update <%= @outline.name %> </h1>
+        <hr>
+        <%= render "shared/outline_form" %>
+          <nav class="nav d-flex">
+            <p><%= link_to "Return to outline", outline_path(@outline.id) %></p>
+            <p><%= link_to "Return to outlines", outlines_path %></p>
+          </nav>
+      </div>
+      
+    </div>
+  </main>
+  <br>
+</div>
+<footer>
+  <%= render 'shared/footer' %>
+</footer>
