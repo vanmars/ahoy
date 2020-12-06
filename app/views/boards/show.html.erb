@@ -33,7 +33,6 @@
             <p class="card-text"><%= card.text %></p>
           </div>
         </section>
-
       <% end %>
     </article>
     <article id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" >
@@ -51,10 +50,8 @@
         <button class="btn sign-in-btn-dark"><%= link_to 'Home', board_path(@board.id), method: :delete, class:'nav-link' %></button>
       </div>
     </article>
-
   <% else %>
     <p>There was an error. Please enter your outlines again. Make sure both outlines have the correct information stored!</p>
     <%= link_to 'Play', new_board_path %>
   <% end %>
-
 </main>
