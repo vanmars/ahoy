@@ -1,6 +1,11 @@
 @import 'abstracts/variables';
 @import 'base/typography';
 
+.account {
+  // height: 65vh;
+  overflow-x: hidden
+}
+
 .account .card {
   background-color: $light-blue;
   width: 65%;
@@ -18,7 +23,8 @@
   align-self: center;
 }
 
-// .footer {
-//   position:fixed;
-//   top: 90vh;
-// }
+.account-footer {
+  margin-top: 21vh;
+  // position:fixed;
+  // top: 90vh;
+}
