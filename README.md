@@ -73,7 +73,12 @@ December 11 2020
 8:30: Researching how to add a search endpoint to an API so users can search for quotes by book title
 https://www.freecodecamp.org/news/how-to-add-a-powerful-search-engine-to-your-rails-backend-57bced889032/
 
-9:30: Begin building my books API
+9:30: Begin building my books API 
+
+10:00 - Unable to launch APU, realize there is a PG server error; begin debugging
+
+11:30 - Get back on track; begin new API books project from scratch
+
 
 ## Support and Contact Details
 
