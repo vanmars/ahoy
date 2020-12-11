@@ -75,9 +75,13 @@ https://www.freecodecamp.org/news/how-to-add-a-powerful-search-engine-to-your-ra
 
 9:30: Begin building my books API 
 
-10:00 - Unable to launch APU, realize there is a PG server error; begin debugging
+10:00 - Unable to launch API, realize there is a PG server error; begin debugging
 
 11:30 - Get back on track; begin new API books project from scratch
+
+12:00 - Lookup FactoryBot methods for making a one to many association
+
+12:30 - Go to lunch
 
 
 ## Support and Contact Details
