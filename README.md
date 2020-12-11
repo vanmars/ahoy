@@ -1,6 +1,6 @@
 # Ahoy!: An outline rescue game  
 
-_16 October 2020_
+_11 December 2020_
 
 #### _An English language arts game for essay outlining_
 
@@ -16,7 +16,6 @@ This is a capstone project for Epicodus. It is an English language arts game tha
 As a former English teacher, I remember how I wished I and my students could have had more time to spend on refining students' outlines. Too often I would look over their outlines quickly to ensure they at least had a solid thesis and claims and quotations to back that thesis up. We were not able to dig more deeply into whether the evidence selected for the paper was actually persuasive; this would cause problems later on during the drafting phase when students could not understand why arguments lacked strength. 
 
 Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage students in a critical examination of their outlines. Two students enter their outlines into the game, which randomizes their evidence in a game board. Each outliner gives a one sentence claim or clue to a partner to see if their partner can correctly guess the evidence the outliner selected to prove their claim. If a claim fails to work, the clue giver will have to improvise and craft and better claim. The team that selects all the evidence first wins!
-
 
 ## Minimum Viable Product User Stories
 | #    | Story | 
@@ -65,6 +64,16 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 ## Known Bugs
 
 _No known bugs at this time._
+
+## Log of Work (for Epicodus)
+December 11 2020
+
+8:00: Began by reviewing how to make a Rails API, using Epicodus curriculum, my notes, and the following websites: https://www.digitalocean.com/community/tutorials/build-a-restful-json-api-with-rails-5-part-one, https://codeburst.io/how-to-build-a-good-api-using-rubyonrails-ef7eadfa3078
+
+8:30: Researching how to add a search endpoint to an API so users can search for quotes by book title
+https://www.freecodecamp.org/news/how-to-add-a-powerful-search-engine-to-your-rails-backend-57bced889032/
+
+9:30: Begin building my books API
 
 ## Support and Contact Details
 
