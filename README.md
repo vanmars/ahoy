@@ -65,25 +65,6 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 
 _No known bugs at this time._
 
-## Log of Work (for Epicodus)
-December 11 2020
-
-8:00: Began by reviewing how to make a Rails API, using Epicodus curriculum, my notes, and the following websites: https://www.digitalocean.com/community/tutorials/build-a-restful-json-api-with-rails-5-part-one, https://codeburst.io/how-to-build-a-good-api-using-rubyonrails-ef7eadfa3078
-
-8:30: Researching how to add a search endpoint to an API so users can search for quotes by book title
-https://www.freecodecamp.org/news/how-to-add-a-powerful-search-engine-to-your-rails-backend-57bced889032/
-
-9:30: Begin building my books API 
-
-10:00 - Unable to launch API, realize there is a PG server error; begin debugging
-
-11:30 - Get back on track; begin new API books project from scratch
-
-12:00 - Lookup FactoryBot methods for making a one to many association
-
-12:30 - Go to lunch
-
-
 ## Support and Contact Details
 
 _Connect with me at vamariestewart@gmail.com with ideas to improve this project._
