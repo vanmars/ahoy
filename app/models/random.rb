@@ -1,4 +1,4 @@
-class Quote
+class Random
 
   def initialize(title)
     @title = title
