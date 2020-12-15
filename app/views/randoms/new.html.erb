@@ -6,26 +6,15 @@
   <br>
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Generate a Random Game</h2>
-    <%= render "shared/errors", :object => @random %>
     <br>
 
-    <%= form_for @random do |f| %>
-      <div class="field">
-        <%= f.label :book_title %><Br>
-        <%= f.text_field 'Book Title', :book_title, placeholder:'Lord of the Flies' %>
-      </div>
-      <br> 
-
-      <%= f.submit 'Play!', class: "btn random-btn-dark", id: 'random-btn' %>
-    <% end %>
-
-    <%# <form action='/random' method='post'>
+    <form action='/randoms' method='post'>
       <div class="form-group">
         <label for="book">Book Title: </label>
         <input id="book" name="book" placeholder="The Awakening">
       </div>
       <button class="btn random-btn-dark" id="random-btn" type="submit">Play!</button>
-    </form>    %>
+    </form>   
 
   </div>
 </div>

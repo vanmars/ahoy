@@ -34,8 +34,10 @@ class RandomsController < ApplicationController
       end
       quotes = quotes.shuffle
       quotes = quotes.slice(0, 16)
+
       # Create Cards
       # @data = data.shuffle
+      
     else
       flash[:alert] = "There was an error. Please search for another book."
       redirect_to :new
