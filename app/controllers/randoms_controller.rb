@@ -1,4 +1,4 @@
-class RandomController < ApplicationController
+class RandomsController < ApplicationController
 
   def new
     @random = Random.new

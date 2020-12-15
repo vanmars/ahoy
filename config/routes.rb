@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :outlines
   resources :boards
-  resources :random
+  resources :randoms
 
   get 'home/index'
   get 'home/directions',  to: 'home#directions', as: 'home_directions'
