@@ -7,10 +7,10 @@ class RandomBoardsController < ApplicationController
   end
 
   def create
-    @random = RandomBoard.new([{ book_title: params[:book_title] }])
+    @random = RandomBoard.new(random_board_params)
     if @random.save
       flash[:notice] = "Random board successfully created!"
-      redirect_to random_path(@random.id)
+      redirect_to random_board_path(@random.id)
     else 
       flash[:alert] = "There was an error. Please try again."
       render :new
@@ -26,11 +26,14 @@ class RandomBoardsController < ApplicationController
 
     if book_id
       quotes = quote_object.get_quotes(book_id)
+      p quotes
 
       if quotes
         # Grab 16 random quotations from all results
         quotes = quotes.shuffle
+        p quotes
         quotes = quotes.slice(0, 16)
+        p quotes
 
         # Create Cards for Game Board
         @out1ev1a = Card.create({text: quotes[0], category: "blue_evidence", color:"blue"})
@@ -84,7 +87,7 @@ class RandomBoardsController < ApplicationController
   end
 
 private
-  def quote_params
+  def random_board_params
     params.require(:random_board).permit(:book_title)
   end
 
