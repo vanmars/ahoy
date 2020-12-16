@@ -36,6 +36,7 @@
         </section>
       <% end %>
     </article>
+
     <article id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" >
       <% @data.each_with_index do |card, index| %>
         <section class="col mb-4">
@@ -48,11 +49,13 @@
     <article class="card shadow p-4 mx-auto mt-5 w-50 text-center" id="win-card">
       <div id="win-div">
         <p id="win-para"></p>
-        <button class="btn sign-in-btn-dark"><%= link_to 'Home', board_path(@board.id), method: :delete, class:'nav-link' %></button>
+        <button class="btn sign-in-btn-dark"><%= link_to 'Home', random_path(@random.id), method: :delete, class:'nav-link' %></button>
       </div>
     </article>
+
   <% else %>
     <p>There was an error. Please search for another book.</p>
     <%= link_to 'New Random Board', new_random_path %>
   <% end %>
+
 </main>

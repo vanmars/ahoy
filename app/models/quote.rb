@@ -5,7 +5,10 @@ class Quote
 
  def get_book_id
   response = HTTParty.get('https://classic-texts-api.herokuapp.com/search?title=' + @title)
-  book_id = response.first["id"]
+  if response
+    return response.first["id"]
+  else
+    return []
  end
 
  def get_quotes(id)
