@@ -1,0 +1,26 @@
+@import 'abstracts/variables';
+@import 'base/typography';
+
+.directions {
+  overflow-x: hidden;
+  
+}
+
+.directions .card {
+background-color: $light-blue;
+width: 65%;
+margin-top: 5%;
+margin-bottom: 15%;
+}
+
+.directions h1 {
+text-align: center;
+}
+
+.directions h2 {
+font-size: 26px;
+}
+
+.directions a {
+align-self: center;
+}

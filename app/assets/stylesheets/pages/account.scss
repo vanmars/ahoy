@@ -2,8 +2,8 @@
 @import 'base/typography';
 
 .account {
-  // height: 65vh;
-  overflow-x: hidden
+  overflow-x: hidden;
+  height: 80%;
 }
 
 .account .card {
@@ -21,10 +21,4 @@
 
 .account a {
   align-self: center;
-}
-
-.account-footer {
-  margin-top: 21vh;
-  // position:fixed;
-  // top: 90vh;
 }
