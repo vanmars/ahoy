@@ -3,7 +3,7 @@
     <div class="splash-buttons-nav navbar-nav mr-auto">
       <button class="btn mr-3 mt-3 sign-out-btn-dark"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %></button>
       <button class="btn mr-3 mt-3 sign-in-btn-dark"><%= link_to 'Outlines', outlines_path, class: 'nav-link'%></button>
-      <button class="btn mr-3 mt-3 random-btn-dark"><%= link_to 'Random', new_random_path, class: 'nav-link'%></button>
+      <button class="btn mr-3 mt-3 random-btn-dark"><%= link_to 'Random', new_random_board_path, class: 'nav-link'%></button>
       <button class="btn mr-3 mt-3 play-btn-dark"><%= link_to 'Play', new_board_path, class: 'nav-link'%></button>
     </div>
   <% else %>
