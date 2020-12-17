@@ -65,6 +65,15 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 
 _No known bugs at this time._
 
+## To Do
+* Add content to about, contact, and directions pages
+* Change game interaction, so that it remains player's turn if a yellow card is selected. Kepp it so that if a red card is selected, the player's turn changes.
+* Add animations: loading wheel when api being called, clouds across home screen, ship to the rescue on win screen?
+* Add music?
+
+## Improvements
+* Need error handling for when API call from random button does not work and when incorrect user id is entered on play button
+
 ## Support and Contact Details
 
 _Connect with me at vamariestewart@gmail.com with ideas to improve this project._
