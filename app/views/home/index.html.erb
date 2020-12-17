@@ -3,13 +3,7 @@
 </header>
 
 <main>
-  <section id="splash-tagline" class="d-flex justify-content-center align-items-center">
-    <% if user_signed_in? %>
-      <h1><%= link_to "Hi, #{current_user.name}", home_account_path, id: 'nav-name' %></h1>
-    <% else %>
-      <h1>An outline rescue game.</h1>
-    <% end %>
-  </section>
+  <%= render 'shared/splash_tagline' %> 
   <section id="splash-image-top"></section>
   <section id="directions" class="p-5 text-center">
     <h1>How does it work?</h1>
