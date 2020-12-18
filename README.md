@@ -66,12 +66,12 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-* Change game interaction, so that it remains player's turn if a yellow card is selected. Keep it so that if a red card is selected, the player's turn changes.
 * Do not render the shared footer on the game board pages.
 * Add styling to win screen
 * Add animations: loading wheel when api being called for random board, clouds across home screen?
 * Add music?
 * Fix button hober styling on outlines and splash pages
+* Update data table visualization graph on README
 
 * Create better layout for about, credits, and directions pages
 
@@ -95,3 +95,5 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 9:30 - Reformat forms styling - buttons and input fields/labels
 
 10:00 - Break
+
+10:15 - 

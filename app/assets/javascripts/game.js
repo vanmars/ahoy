@@ -36,8 +36,8 @@ $(document).ready(function() {
     // Create function that defines how to change text, turn, clickTracker list on each turn scenario.
   const turnChange = (ev) => {
     if (turn == 'B' && clickTracker.length < 2){   // If turn is blue, and it is the first turn.
-        // If first click is a blue, it remains blue's turn.
-        if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue')) {
+        // If first click is a blue or yellow, it remains blue's turn.
+        if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue') || ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
           turn = 'B';
           // If first click is not a blue, it becomes green's turn.
         } else {
@@ -53,8 +53,8 @@ $(document).ready(function() {
       document.querySelector('#turn-text').style.color = "#BED669";
       clickTracker = [];
     } else if (turn == 'G' && clickTracker.length < 2) {  // If turn is green, and it is the first turn.
-        // If first click is a green, it remains green's turn.
-        if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green')) {
+        // If first click is a green or yellow, it remains green's turn.
+        if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green') || ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
         turn = 'P';
         // If first click is not a green: change turn to B, change screen text, and reset clickTracker.
         } else {
