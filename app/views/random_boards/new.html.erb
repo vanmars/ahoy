@@ -6,12 +6,14 @@
   <br>
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Generate a Random Game</h2>
+    <%= notice %>
+    <%= alert %>
+    <br />
     <%= render "shared/errors", :object => @random %>
     <br>
     <%= form_for @random do |f| %>
-      <div class="field">
-        <%= f.label :book_title %><Br>
-        <%= f.text_field :book_title, placeholder:'Lord of the Flies' %>
+      <div class="field d-flex justify-content-center">
+        <%= f.text_field :book_title, placeholder:'Enter book title', class: 'form-control text-center', style: 'width: 50%' %>
       </div>
       <br> 
       <%= f.submit 'Play!', class: "btn random-btn-dark", id: 'random-btn' %>
