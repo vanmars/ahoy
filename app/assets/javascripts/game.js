@@ -4,31 +4,25 @@ $(document).ready(function() {
   const blueWin = () => {
     if (flippedBlue.length == 4) {
       console.log("Blue wins!")
-      // Hide nav bar, and game board
-      $('.game-nav').hide();
-      $('#board').hide();
-      // Change background image
-      $('.game-container').css("background", "url('win.jpg') no-repeat center center fixed"); 
-      // Make the win-card appear
+      // Style the win card appropriately
       $('#win-para').append("Blue wins!");
       $('#win-para').css("color", "#CAFDFF")
-      $('#win-card').show();
+      // Hide nav bar, and game board, and show win container
+      $('.play-container').hide();
+      $('.win-container').show();
     };
   };
-  
+
   //When the green count list length equals four, cue green win scenario page.
   const greenWin = () => {
     if (flippedGreen.length == 4) {
       console.log("Green wins!")
-       // Hide nav bar, and game board
-       $('.game-nav').hide();
-       $('#board').hide();
-       // Change background image
-       $('.game-container').css("background", "url('win.jpg') no-repeat center center fixed"); 
-       // Make the win-card appear
-       $('#win-para').append("Green wins!");
-       $('#win-para').css("color", "#BED669")
-       $('#win-card').show();
+      // Make the win-card appear
+      $('#win-para').append("Green wins!");
+      $('#win-para').css("color", "#BED669")
+       // Hide nav bar, and game board, and show win container
+       $('.play-container').hide();
+       $('.win-container').show();
      };
   };
   

@@ -66,8 +66,7 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-* Add styling to win screen
-* fix formatting of Learning Thoery section on home screen
+* Fix formatting of Learning Thoery section on home screen
 
 * Add animations: loading wheel when api being called for random board, clouds across home screen?
 * Add music?
@@ -104,4 +103,4 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 10:45 - Discover bug in generate random game board - the exception handler is preventing even valid searches from going through; begin debuggins
 
-
+11:00 - Work on styling win scenario page; can't seem to reset the backgroun image

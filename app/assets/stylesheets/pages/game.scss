@@ -29,7 +29,7 @@
 }
 
 // Body
-.game-container { 
+.play-container { 
   background: url('island-view.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -43,7 +43,6 @@
   top: 15vh;
   left: 5vw;
   margin-right: 5vw;
-  // overflow-y: scroll;
 }
 
 #islander-board {
@@ -69,12 +68,27 @@
 }
 
 // Win Scenario
+.win-container {
+  background: url('win.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 110vh;
+  margin-top: -50px;
+}
+
 #win-card{
-  display: none;
   background-color:$navy-blue;
   color: white;
+  margin-top: 100px;
+  max-height: 200px;
 }
 
 #win-para{
   font-size: 50px
+}
+
+.win-container button {
+  align-self: center;
 }
