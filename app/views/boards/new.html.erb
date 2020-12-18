@@ -1,6 +1,4 @@
 <div class="board-container d-flex flex-column align-items-center">
-  <%= notice %>
-  <%= alert %>
   <br>
   <div class="navbar-nav">
     <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "play-header"%>
@@ -8,8 +6,10 @@
   <br>
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Create New Game</h2>
+    <%= notice %>
+    <%= alert %>
     <%= render "shared/errors", :object => @board %>
-    
+    <br>
     <br>
 
     <%= form_for @board do |f| %>
