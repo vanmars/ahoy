@@ -1,6 +1,7 @@
 <header>
   <%= render 'shared/header' %>
 </header>
+
 <main>
   <%= render 'shared/splash_tagline' %> 
   <section id="splash-image-top"></section>
@@ -37,9 +38,8 @@
     </div>
   </section>
 
-  <section id="theory" class="p-5 d-flex align-items-center">
-    <div class="card mb-3 border-0">
-      <%# <div class="row no-gutters"> %>
+  <section id="theory" class="p-5">
+      <div class="row h-100">
         <div class="col-lg-6">
           <div class="card-body">
             <h1 class="card-title">Learning Theory</h1>
@@ -49,12 +49,14 @@
             </small></p>
           </div>
         </div>
-        <div class="col-lg-6">
-          <%= image_tag 'classroom.jpg', class:"card-img", id:"classroom-img", alt:"" %>
-        </div>
-      <%# </div> %>
+    </div>
+    <div class="row d-flex justify-content-end">
+      <div class="col card border-0">
+        <%= image_tag 'classroom.jpg', class:"card-img", id:"classroom-img", alt:"" %>
+      </div>
     </div>
   </section>
+
 </main>
 <footer>
   <%= render 'shared/footer'%> 

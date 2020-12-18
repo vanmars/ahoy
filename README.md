@@ -66,14 +66,11 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-* Fix formatting of Learning Thoery section on home screen
-
-* Add animations: loading wheel when api being called for random board, clouds across home screen?
-* Add music?
+* Add music - correct answers, wrong answers, and win scenarios
+* Add animations: scrolling effect for how does it work section, loading wheel when api being called for random board, clouds across home screen, confetti on win screen?
 
 * Fix button hover styling on outlines and splash pages
 * Update data table visualization graph on README
-
 * Create better layout for about, credits, and directions pages
 
 ## Support and Contact Details
@@ -104,3 +101,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 10:45 - Discover bug in generate random game board - the exception handler is preventing even valid searches from going through; begin debuggins
 
 11:00 - Work on styling win scenario page; can't seem to reset the backgroun image
+
+12:30 - Work on fixing learning theory section layout on splash page
+
+1:00 - Lunch
