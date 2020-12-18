@@ -4,4 +4,5 @@ class Board < ApplicationRecord
   has_many :cards
 
   validates :name, :outline_id_1, :outline_id_2, presence: true
+
 end

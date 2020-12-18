@@ -89,3 +89,6 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 ## Photo Credits
 
 Splash Page: <a href="https://www.freepik.com/vectors/tree">Tree vector created by upklyak - www.freepik.com</a>
+
+## Log for Epicodus Instructors
+8:00 Work on exception handling when no outline id matches and api get request returns nothing
