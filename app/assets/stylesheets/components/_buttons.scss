@@ -50,3 +50,56 @@
   color: $green;
   border: solid 2px $green;
 }
+
+// Individual SignUp, SignIn, Random, and Play Pages
+
+#random-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+#random-btn:hover {
+  background-color: white;
+  color: $red;
+  border: solid 2px $red;
+  margin: -1px;
+}
+
+#play-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+#play-btn:hover {
+  background-color: white;
+  color: $green;
+  border: solid 2px $green;
+  margin: -1px;
+}
+
+#signin-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+#signin-btn:hover {
+  background-color: white;
+  color: $yellow;
+  border: solid 2px $yellow;
+  margin: -1px;
+}
+
+#signup-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+#signup-btn:hover {
+  background-color: white;
+  color: $blue;
+  border: solid 2px $blue;
+  margin: -1px;
+}

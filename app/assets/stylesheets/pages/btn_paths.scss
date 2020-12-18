@@ -8,19 +8,8 @@
   font-size: 64px;
 }
 
-#signup-btn, #signin-btn, #random-btn, #update-account-btn, #cancel-account-btn {
-  padding: 5px 0px;
-  color: white;
-  font-weight: bolder;
-}
-
 #cancel-account-btn {
   width: 150px;
-}
-
-#signup-btn:hover, #signin-btn:hover, #random-btn:hover, #update-account-btn:hover, #cancel-account-btn:hover {
-  border: solid  $navy-blue 1px;
-  color:$navy-blue;
 }
 
 // Sign Up

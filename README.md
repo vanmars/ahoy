@@ -66,13 +66,14 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-* Add content/better layouts to about, credits, and directions pages
 * Change game interaction, so that it remains player's turn if a yellow card is selected. Keep it so that if a red card is selected, the player's turn changes.
 * Do not render the shared footer on the game board pages.
 * Add styling to win screen
 * Add animations: loading wheel when api being called for random board, clouds across home screen?
 * Add music?
-* Need error handling for when API call from random button does not work and when incorrect user id is entered on play button
+* Fix button hober styling on outlines and splash pages
+
+* Create better layout for about, credits, and directions pages
 
 ## Support and Contact Details
 
@@ -93,3 +94,5 @@ Splash Page: <a href="https://www.freepik.com/vectors/tree">Tree vector created 
 ## Log for Epicodus Instructors
 8:00 - Work on exception handling when no outline id matches 
 9:00 - Work on exception handling when API response is nil
+9:30 - Reformat forms styling - buttons and input fields/labels
+10:00 - Break
