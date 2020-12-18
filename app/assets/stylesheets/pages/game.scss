@@ -40,17 +40,17 @@
 
 #board {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 5vw;
-  margin-right: 15vw;
+  margin-right: 5vw;
   // overflow-y: scroll;
 }
 
 #islander-board {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 5vw;
-  margin-right: 15vw;
+  margin-right: 5vw;
 }
 
 .board-card {
@@ -64,7 +64,8 @@
 }
 
 .card-text {
-  font-size: 12px;;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 // Win Scenario
