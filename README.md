@@ -66,11 +66,13 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-* Do not render the shared footer on the game board pages.
 * Add styling to win screen
+* fix formatting of Learning Thoery section on home screen
+
 * Add animations: loading wheel when api being called for random board, clouds across home screen?
 * Add music?
-* Fix button hober styling on outlines and splash pages
+
+* Fix button hover styling on outlines and splash pages
 * Update data table visualization graph on README
 
 * Create better layout for about, credits, and directions pages
