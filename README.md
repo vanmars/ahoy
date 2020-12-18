@@ -106,4 +106,8 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 1:00 - Lunch
 
-2:00 - Begin research on adding sound and animation
+2:00 - Begin research on adding sound and animation (https://learningsolutionsmag.com/articles/coding-sound-with-javascript-beginner-s-guide, https://www.youtube.com/watch?v=1Doanzn6alA, )
+
+3:00 - Break
+
+3:30 - Begin downloading sounds and incorporating in project
