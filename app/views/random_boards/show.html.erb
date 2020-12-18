@@ -1,7 +1,7 @@
  <header>
   <nav class="game-nav navbar navbar-expand-sm ">
     <div class="navbar-nav mr-auto">
-      <%= link_to 'AHOY!', board_path(@board.id), method: :delete, class:"nav-brand", id: "game-nav-header" %>
+      <%= link_to 'AHOY!', random_board_path(@random.id), method: :delete, class:"nav-brand", id: "game-nav-header" %>
       <% if @turn === "blue" %>
         <p id="turn-text">Blue's Turn</p>
       <% else %>

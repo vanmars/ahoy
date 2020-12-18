@@ -98,6 +98,8 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 10:15 - Remove shared footer from application and only render only home and outline pages
 
-10:40 - Delete game board from database when user exits the game by selecting the Ahoy! logo, to keep DB maintainable
+10:30 - Delete game board from database when user exits the game by selecting the Ahoy! logo, to keep DB maintainable
+
+10:45 - Discover bug in generate random game board - the exception handler is preventing even valid searches from going through; begin debuggins
 
 
