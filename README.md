@@ -105,3 +105,5 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 12:30 - Work on fixing learning theory section layout on splash page
 
 1:00 - Lunch
+
+2:00 - Begin research on adding sound and animation
