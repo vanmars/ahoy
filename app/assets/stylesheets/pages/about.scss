@@ -1,0 +1,26 @@
+@import 'abstracts/variables';
+@import 'base/typography';
+
+.about {
+  overflow-x: hidden;
+}
+
+.about .card {
+background-color: $light-blue;
+width: 65%;
+margin-top: 5%;
+margin-bottom: 15%;
+}
+
+.about h1 {
+text-align: center;
+}
+
+.about h2 {
+font-size: 26px;
+}
+
+.about h3 {
+  font-size: 18px;
+  color: $navy-blue;
+  }
