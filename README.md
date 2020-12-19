@@ -110,4 +110,6 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 3:00 - Break
 
-3:30 - Begin downloading sounds and incorporating in project
+3:30 - Begin downloading sounds and incorporating in project; logic seems correct, but can't seem to get it working
+
+4:30 - Switch gears to working on scrolling effect animation; will come back to sound if time allows later
