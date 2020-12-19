@@ -1,4 +1,18 @@
 $(document).ready(function() {
+  // <%= audio_tag("/audios/water_drip.mp3", id: "wrong_audio", controls: true) %>
+  // <%= audio_tag("/audios/success.mp3", id: "success_audio") %>
+  
+  // Audio
+  const correctSound = () => {
+    const audio = new Audio('./../audios/success.mp3');
+    audio.play();
+  };
+
+  const incorrectSound = () => {
+    const audio = new Audio('./../audios/water_drip.mp3');
+    audio.play();
+  };
+
   // 1. GAME DETECTS A WIN SCENARIO
   //When the blue count list length equals four, cue blue win scenario page.
   const blueWin = () => {
@@ -33,6 +47,7 @@ $(document).ready(function() {
         // If first click is a blue or yellow, it remains blue's turn.
         if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue') || ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
           turn = 'B';
+          correctSound();
           // If first click is not a blue, it becomes green's turn.
         } else {
           turn = 'G';
@@ -50,6 +65,7 @@ $(document).ready(function() {
         // If first click is a green or yellow, it remains green's turn.
         if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green') || ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
         turn = 'P';
+        correctSound();
         // If first click is not a green: change turn to B, change screen text, and reset clickTracker.
         } else {
         turn = 'B';
