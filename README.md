@@ -66,12 +66,24 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-* Add music - correct answers, wrong answers, and win scenarios
-* Add animations: scrolling effect for how does it work section, loading wheel when api being called for random board, clouds across home screen, confetti on win screen?
+Saturday
+* Update random board show page to look like game board show page to accomodate new win image
+* Add animations: scrolling effect for how does it work section, clouds across home screen
+* Add many more entries to API!
 
+Sunday
 * Fix button hover styling on outlines and splash pages
 * Update data table visualization graph on README
-* Create better layout for about, credits, and directions pages
+* Finalize README documentation
+
+* Monday
+* Morning: Testing, testing, testing
+* Afternoon: Refactor!
+
+Tuesday
+* Final clean up
+* Prep for presentation
+* Add loading wheel animation to API page (and possible confetti on win page), if time
 
 ## Support and Contact Details
 
@@ -106,7 +118,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 1:00 - Lunch
 
-2:00 - Begin research on adding sound and animation (https://learningsolutionsmag.com/articles/coding-sound-with-javascript-beginner-s-guide, https://www.youtube.com/watch?v=1Doanzn6alA, )
+2:00 - Begin research on adding sound and animation
 
 3:00 - Break
 
@@ -114,4 +126,6 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 4:30 - Do more research to find a different approach
 
-4:50 - Got sound when game board loads . . . but don't know why
+4:50 - Get sound to work when page loaded, so I know that the audio files work and are connected in the asset pipeline; need to figure out why .play() is not reading as a function
+
+6:00 - Get game sounds working -- woot woot! (Needed to reload server and use vanilla js rather than jquery for some reason)

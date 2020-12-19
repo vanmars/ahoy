@@ -1,23 +1,24 @@
+// Audio 
+const setVolume = () => {
+  document.querySelector('#win_audio').volume = 0.1;
+  document.querySelector('#success_audio').volume = 0.1;
+  document.querySelector('#wrong_audio').volume = 0.1;
+};
+
+const correctSound = () => {
+  document.querySelector('#success_audio').play();
+};
+
+const incorrectSound = () => {
+  document.querySelector('#wrong_audio').play();
+};
+
+
 $(document).ready(function() {  
-  // Audio
-  const setVolume = () => {
-    $('#win_audio').volume = 0.05;
-  };
+  setVolume();
 
-  const correctSound = () => {
-    const sound = $('#success_audio')
-    sound.volume = 0.05
-    sound.play();
-  };
-
-  const incorrectSound = () => {
-    const sound = $('#wrong_audio')
-    sound.volume = 0.05
-    sound.play();
-  };
-
-  // 1. GAME DETECTS A WIN SCENARIO
-  //When the blue count list length equals four, cue blue win scenario page.
+  // 1. HANDLE WIN SCENARIO
+  // When the blue count list length equals four, cue blue win scenario page.
   const blueWin = () => {
     if (flippedBlue.length == 4) {
       console.log("Blue wins!")
@@ -27,9 +28,9 @@ $(document).ready(function() {
       // Hide nav bar, and game board, and show win container
       $('.play-container').hide();
       $('.win-container').show();
+      document.querySelector('#win_audio').play()
     };
   };
-
   //When the green count list length equals four, cue green win scenario page.
   const greenWin = () => {
     if (flippedGreen.length == 4) {
@@ -37,53 +38,81 @@ $(document).ready(function() {
       // Make the win-card appear
       $('#win-para').append("Green wins!");
       $('#win-para').css("color", "#BED669")
-       // Hide nav bar, and game board, and show win container
-       $('.play-container').hide();
-       $('.win-container').show();
-     };
+        // Hide nav bar, and game board, and show win container
+        $('.play-container').hide();
+        $('.win-container').show();
+        document.querySelector('#win_audio').play()
+      };
   };
-  
-  // 2. THE GAME DETECTS WHOSE TURN IT IS AND PRINTS IT TO THE SCREEN.
-    // Create function that defines how to change text, turn, clickTracker list on each turn scenario.
+
+  // 2. HANDLE TURN TRACKING
+  // Create function that defines how to change text, turn, clickTracker list on each turn scenario.
   const turnChange = (ev) => {
-    if (turn == 'B' && clickTracker.length < 2){   // If turn is blue, and it is the first turn.
-        // If first click is a blue or yellow, it remains blue's turn.
-        if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue') || ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
+    // If turn is blue, and it is the first turn.
+    if (turn == 'B' && clickTracker.length < 2){   
+        // If first click is a blue, it remains blue's turn, and success noise plays.
+        if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue')) {
           turn = 'B';
           correctSound();
-          // If first click is not a blue, it becomes green's turn.
+        // If first click is yellow, it remains blue's turn, but water noise plays.
+        } else if (ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
+          turn = 'B';
+          incorrectSound();
+        // If first click is not a blue, change to green's turn, change screen text/color, reset clickTracker, and water noise plays.
         } else {
           turn = 'G';
+          incorrectSound();
           document.querySelector('#turn-text').innerHTML = "Green's Turn";
           document.querySelector('#turn-text').style.color = "#BED669";
           clickTracker = [];
         };
-    } else if (turn == 'B' && clickTracker.length == 2) { // If turn is blue, and it is the second turn.
-      // Change turn to G, change screen text,  and reset ClickTracker.
+    // If turn is blue, and it is the second turn.
+    } else if (turn == 'B' && clickTracker.length == 2) { 
+        // If click is blue, play success noise, otherwise play water noise
+        if (ev.target.classList.contains('blue') || ev.target.parentNode.classList.contains('blue')) {
+          correctSound();
+        } else {
+          incorrectSound();
+        };
+      // Change turn to G, change screen text, and reset ClickTracker.
       turn = 'G';
       document.querySelector('#turn-text').innerHTML = "Green's Turn";
       document.querySelector('#turn-text').style.color = "#BED669";
       clickTracker = [];
-    } else if (turn == 'G' && clickTracker.length < 2) {  // If turn is green, and it is the first turn.
-        // If first click is a green or yellow, it remains green's turn.
-        if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green') || ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
+    // If turn is green, and it is the first turn.
+    } else if (turn == 'G' && clickTracker.length < 2) {  
+      // If first click is a green, it remains green's turn, and success noise plays
+      if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green')) {
         turn = 'P';
         correctSound();
-        // If first click is not a green: change turn to B, change screen text, and reset clickTracker.
+      // If first click is yellow, it remains green's turn, but water noise plays.
+      } else if (ev.target.classList.contains('yellow') || ev.target.parentNode.classList.contains('yellow')) {
+        turn = 'P';
+        incorrectSound();
+      // If first click is not a green: change turn to B, change screen text/color, reset clickTracker, and play water noise.
+      } else {
+      turn = 'B';
+      incorrectSound();
+      document.querySelector('#turn-text').innerHTML = "Blue's Turn";
+      document.querySelector('#turn-text').style.color = "#CAFDFF";
+      clickTracker = [];
+      }
+    // If turn is green, and it is the second turn.
+    } else { 
+        // If click is green, play success noise, otherwise play water noise
+        if (ev.target.classList.contains('green') || ev.target.parentNode.classList.contains('green')) {
+        correctSound();
         } else {
-        turn = 'B';
-        document.querySelector('#turn-text').innerHTML = "Blue's Turn";
-        document.querySelector('#turn-text').style.color = "#CAFDFF";
-        clickTracker = [];
-        }
-    } else { // If turn is green, and it is the second turn.
+        incorrectSound();
+        };
+      // Change turn to B, change screen text, and reset ClickTracker.
       turn = 'B';
       document.querySelector('#turn-text').innerHTML = "Blue's Turn";
       document.querySelector('#turn-text').style.color = "#CAFDFF";
       clickTracker = [];
     };
   };
-  
+    
   // 3. WHEN A USER CLICKS ON A CARD, THE CARD TURNS THE CORRECT COLOR.
       // Create Event Handlers
   const cardClicked = (ev) => {
@@ -136,9 +165,7 @@ $(document).ready(function() {
       $('#board').hide();
       $('#islander-board').show();
     }
-  }
-
-
+  };
   // Create Lists to track when flipped blue cards and flipped green cards occur. Use the cardClicked function above to append each list.
   let flippedBlue = [];
   let flippedGreen = [];
@@ -152,8 +179,8 @@ $(document).ready(function() {
   } else {
     turn = 'G';
     document.querySelector('#turn-text').style.color = "#BED669";
-  }
-  
+  };
+
   // Event Listeners
   $('#card0').click(cardClicked);
   $('#card1').click(cardClicked);
