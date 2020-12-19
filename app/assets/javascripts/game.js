@@ -1,16 +1,19 @@
-$(document).ready(function() {
-  // <%= audio_tag("/audios/water_drip.mp3", id: "wrong_audio", controls: true) %>
-  // <%= audio_tag("/audios/success.mp3", id: "success_audio") %>
-  
+$(document).ready(function() {  
   // Audio
+  const setVolume = () => {
+    $('#win_audio').volume = 0.05;
+  };
+
   const correctSound = () => {
-    const audio = new Audio('./../audios/success.mp3');
-    audio.play();
+    const sound = $('#success_audio')
+    sound.volume = 0.05
+    sound.play();
   };
 
   const incorrectSound = () => {
-    const audio = new Audio('./../audios/water_drip.mp3');
-    audio.play();
+    const sound = $('#wrong_audio')
+    sound.volume = 0.05
+    sound.play();
   };
 
   // 1. GAME DETECTS A WIN SCENARIO

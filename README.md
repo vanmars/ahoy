@@ -1,6 +1,6 @@
 # Ahoy!: An outline rescue game  
 
-_11 December 2020_
+_18 December 2020_
 
 #### _An English language arts game for essay outlining_
 
@@ -85,7 +85,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * Ruby
 * Rails
 
-## Log for Epicodus Instructors
+## Log for Epicodus Instructors - 18 December 2020
 8:00 - Work on exception handling when no outline id matches 
 
 9:00 - Work on exception handling when API response is nil
@@ -112,4 +112,6 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 3:30 - Begin downloading sounds and incorporating in project; logic seems correct, but can't seem to get it working
 
-4:30 - Switch gears to working on scrolling effect animation; will come back to sound if time allows later
+4:30 - Do more research to find a different approach
+
+4:50 - Got sound when game board loads . . . but don't know why

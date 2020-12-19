@@ -16,6 +16,8 @@
   </header>
   <main>
     <article class="game-container">
+      <%= audio_tag("water_drip.mp3", id: "wrong_audio") %>
+      <%= audio_tag("success.mp3", id: "success_audio") %>
       <% if @data.any? %>
         <div id="islander-board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" style="display:none" >
           <% @data.each_with_index do |card, index| %>
@@ -59,7 +61,7 @@
 
 <div class='win-container' style="display:none">
   <main>
-    <%= audio_tag("/audios/win.mp3", autoplay: true, id: 'win_audio') %>
+    <%= audio_tag("win.mp3", autoplay: true, id: 'win_audio', class: 'audio-to-play') %>
     <article class="d-flex justify-content-center">
       <div class="card shadow p-4 w-50 text-center" id="win-card">
         <p id="win-para"></p>
