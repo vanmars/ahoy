@@ -38,10 +38,11 @@ $(document).ready(function() {
       // Make the win-card appear
       $('#win-para').append("Green wins!");
       $('#win-para').css("color", "#BED669")
-        // Hide nav bar, and game board, and show win container
-        $('.play-container').hide();
-        $('.win-container').show();
-        document.querySelector('#win_audio').play()
+      // Hide nav bar, and game board, and show win container
+      $('.play-container').hide();
+      $('.win-container').show();
+      document.querySelector('.win-para-div').classList.add("animate_animated animate_tada animate_repeat_20")
+      document.querySelector('#win_audio').play()
       };
   };
 
