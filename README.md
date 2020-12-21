@@ -68,7 +68,6 @@ _No known bugs at this time._
 ## To Do/Improvements
 
 Monday Morning
-* Fix button hover styling on outlines and splash pages
 * Add animations: scrolling effect for how does it work section, clouds across home screen
 * Refactor
 * Afternoon: Testing, testing, testing
