@@ -68,16 +68,15 @@ _No known bugs at this time._
 ## To Do/Improvements
 
 Monday Morning
-* Add animations: scrolling effect for how does it work section, clouds across home screen
-* Refactor
-* Afternoon: Testing, testing, testing
+* Make signin, signup etc paths centered on screen
+* Afternoon: Testing, testing, testing...and refactor
+* If Time: Add cloud animation on spash page, loading wheel animation on API page, (and possible confetti on win page)
 
 Tuesday Morning
 * Update data table visualization graph on README
 * Finalize README documentation
 * Misc cleanup/refactor
-* Add loading wheel animation to API page (and possible confetti on win page), if time
-Afternoon: Deploy and prep for presentation
+Afternoon: Deploy and Prep for Presentation
 
 Post - Presentation
 * Create a drop-down menu for API search results
