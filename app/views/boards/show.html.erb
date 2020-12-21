@@ -14,13 +14,11 @@
       </div>
     </nav>
   </header>
-
   <main>
     <article class="game-container">
       <%= audio_tag("water_drip.mp3", id: "wrong_audio") %>
       <%= audio_tag("success.mp3", id: "success_audio") %>
       <% if @data.any? %>
-
         <div id="islander-board" style="" 
           class="row row-cols-2 row-cols-sm-3 row-cols-md-4 animate__animated">
           <% @data.each_with_index do |card, index| %>
@@ -41,7 +39,6 @@
             </section>
           <% end %>
         </div>
-
         <div id="board" 
           class="row row-cols-2 row-cols-sm-3 row-cols-md-4 animate__animated" >
           <% @data.each_with_index do |card, index| %>
@@ -59,7 +56,6 @@
     </article>
   </main>
 </div>
-
 <div class='win-container' style="display:none">
   <main>
     <%= audio_tag("win.mp3", id: 'win_audio') %>

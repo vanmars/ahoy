@@ -6,27 +6,23 @@
   <div class="registration-card card shadow-lg p-4 text-center w-50">
     <h2>Log In</h2>
     <br>
-
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field d-flex justify-content-center">
         <%#= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:'Email', class: 'form-control text-center', style: 'width: 50%' %>
       </div>
       <br>
-
       <div class="field d-flex justify-content-center">
         <%#= f.label :password %><br />
         <%= f.password_field :password, autocomplete: "current-password", placeholder:'Password', class: 'form-control text-center', style: 'width: 50%' %>
       </div>
       <br>
-
       <% if devise_mapping.rememberable? %>
         <div class="field">
           <%= f.check_box :remember_me%>
           <%= f.label :remember_me %>
         </div>
       <% end %>
-
       <div class="actions">
         <%= f.submit "Log In", class: "btn sign-in-btn-dark", id: "signin-btn" %>
       </div>

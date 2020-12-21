@@ -22,10 +22,10 @@ class BoardsController < ApplicationController
 
   def show
     @board = Board.find(params[:id])
-
+    # Get outline data belonging to board
     @outline1 = @board.outlines[0]
     @outline2 = @board.outlines[1]
-
+    # Generate Cards
     @out1ev1a = Card.create({text: @outline1.evidence_1a, category: "blue_evidence", color:"blue"})
     @out1ev1b = Card.create({text: @outline1.evidence_1b, category: "blue_evidence", color:"blue"})
     @out1cc1 = Card.create({text: @outline1.close_call_1, category: "blue_close_call", color:"yellow"})
@@ -42,11 +42,9 @@ class BoardsController < ApplicationController
     @out2ev2b = Card.create({text: @outline2.evidence_2b, category: "green_evidence", color:"green"})
     @out2cc2 = Card.create({text: @outline2.close_call_2, category: "green_close_call", color:"yellow"})
     @out2rh2 = Card.create({text: @outline2.red_herring_2, category: "green_red_herring", color:"red"})
-
+    # Randomize Data Output
     data = [ @out1ev1a, @out1ev1b, @out1cc1, @out1rh1, @out1ev2a, @out1ev2b, @out1cc2, @out1rh2, @out2ev1a, @out2ev1b, @out2cc1,  @out2rh1, @out2ev2a, @out2ev2b, @out2cc2, @out2rh2 ]
-
     @data = data.shuffle
-
     # Determine First Turn
     random = rand(0..3)
     @turn = ""
@@ -55,7 +53,6 @@ class BoardsController < ApplicationController
     else
       @turn = "green"
     end
-
     render :show
   end
 
