@@ -65,7 +65,7 @@
     <%= audio_tag("win.mp3", id: 'win_audio') %>
     <article class="d-flex justify-content-center">
       <div class="card shadow p-4 w-50 text-center" id="win-card">
-        <div class="win-para-div">
+        <div class="win-para-div animate__animated">
           <p id="win-para"></p>
         </div>
         <button class="btn sign-in-btn-dark"><%= link_to 'Home', board_path(@board.id), method: :delete, class:'nav-link' %></button>

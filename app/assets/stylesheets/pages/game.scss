@@ -79,16 +79,28 @@
 }
 
 #win-card{
-  background-color:$navy-blue;
+  background-color: transparent;
   color: white;
   margin-top: 100px;
-  max-height: 200px;
+  // max-height: 300px;
 }
 
 #win-para{
-  font-size: 50px
+  font-size: 100px
 }
 
 .win-container button {
   align-self: center;
+}
+
+.win-container button:hover {
+  background-color: white;
+  color: $yellow;
+  border: solid 2px $yellow;
+  margin: -1px;
+}
+
+@media screen and (max-width: 540px) {
+  #win-para {font-size: 70px}
+  .win-container button { padding: 0; }
 }

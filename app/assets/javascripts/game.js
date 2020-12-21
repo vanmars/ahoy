@@ -23,14 +23,15 @@ $(document).ready(function() {
       console.log("Blue wins!")
       // Style the win card appropriately
       $('#win-para').append("Blue wins!");
-      $('#win-para').css("color", "#CAFDFF")
+      $('#win-para').css("color", "#0E4A71")
       // Hide nav bar, and game board, and show win container
       $('.play-container').hide();
-      
       $('.win-container').show();
+      $('.win-para-div').addClass("animate__tada animate__infinite")
       document.querySelector('#win_audio').play()
     };
   };
+
   //When the green count list length equals four, cue green win scenario page.
   const greenWin = () => {
     if (flippedGreen.length == 4) {
@@ -41,7 +42,7 @@ $(document).ready(function() {
       // Hide nav bar, and game board, and show win container
       $('.play-container').hide();
       $('.win-container').show();
-      document.querySelector('.win-para-div').classList.add("animate__animated animate__tada animate__repeat__20")
+      $('.win-para-div').addClass("animate__tada animate__infinite")
       document.querySelector('#win_audio').play()
       };
   };
