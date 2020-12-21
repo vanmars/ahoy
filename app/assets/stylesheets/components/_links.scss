@@ -1,4 +1,18 @@
+@import 'abstracts/variables';
+
 .nav-link {
   color: white;
   font-weight: bolder; 
+}
+
+#nav-link-yellow:hover {
+  color: $yellow;
+}
+
+#nav-link-red:hover {
+  color: $red;
+}
+
+#nav-link-green:hover {
+  color: $green;
 }

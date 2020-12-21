@@ -2,15 +2,15 @@
 
 .btn {
   border-radius: 25px;
-  padding: 0px;
-  width: 100px;
+  padding: 5px 0px 5px;
+  width: 150px;
   box-shadow: 4px 5px 5px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
-.btn:hover {
-  color: $navy-blue;
-}
+// .btn:hover {
+//   color: $navy-blue;
+// }
 
 .sign-in-btn-dark {
   background-color: $yellow;
@@ -52,11 +52,11 @@
 }
 
 // Individual SignUp, SignIn, Random, and Play Pages
-
 #random-btn {
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
+  background-color: $red;
 }
 
 #random-btn:hover {
@@ -70,7 +70,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
+  background-color: $green;
 }
+
 #play-btn:hover {
   background-color: white;
   color: $green;
@@ -82,6 +84,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
+  background-color: $yellow;
 }
 
 #signin-btn:hover {
@@ -95,6 +98,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
+  background-color: $blue;
 }
 
 #signup-btn:hover {

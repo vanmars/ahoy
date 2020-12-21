@@ -18,7 +18,6 @@ class RandomBoardsController < ApplicationController
 
   def show
     @random = RandomBoard.find(params[:id])
-
     # Make API Call
     quote_object = Quote.new(@random.book_title)
     book_id = quote_object.get_book_id()
