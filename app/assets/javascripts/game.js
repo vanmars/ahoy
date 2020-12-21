@@ -161,21 +161,21 @@ $(document).ready(function() {
     const view = document.querySelector('#game-view');
     // const cards = document.querySelectorAll('.board-card');
     if (view.innerHTML === "Go To Islander's View") {
-      $('#islander-board').removeClass("animate__rollOut");
-      $('#board').removeClass("animate__rollIn");
-      $('#board').addClass("animate__rollOut");
-      $('#islander-board').addClass("animate__rollIn");
+      // $('#islander-board').removeClass("animate__rollOut");
+      // $('#board').removeClass("animate__rollIn");
+      // $('#board').addClass("animate__rollOut");
+      // $('#islander-board').addClass("animate__rollIn");
       
 
-      // $('#islander-board').hide();
-      // $('#board').show();
+      $('#islander-board').hide();
+      $('#board').show();
     } else if (view.innerHTML === "Go To Captain's View") {
-      $('#islander-board').removeClass("animate__rollIn");
-      $('#board').removeClass("animate__rollOut");
-      $('#islander-board').addClass("animate__rollOut");
-      $('#board').addClass("animate__rollIn");
-      // $('#board').hide();
-      // $('#islander-board').show();
+      // $('#islander-board').removeClass("animate__rollIn");
+      // $('#board').removeClass("animate__rollOut");
+      // $('#islander-board').addClass("animate__rollOut");
+      // $('#board').addClass("animate__rollIn");
+      $('#board').hide();
+      $('#islander-board').show();
     }
   };
   // Create Lists to track when flipped blue cards and flipped green cards occur. Use the cardClicked function above to append each list.

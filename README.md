@@ -68,7 +68,6 @@ _No known bugs at this time._
 ## To Do/Improvements
 
 Monday Morning
-* Make signin, signup etc paths centered on screen
 * Afternoon: Testing, testing, testing...and refactor
 * If Time: Add cloud animation on spash page, loading wheel animation on API page, (and possible confetti on win page)
 

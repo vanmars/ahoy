@@ -19,7 +19,7 @@
       <%= audio_tag("water_drip.mp3", id: "wrong_audio") %>
       <%= audio_tag("success.mp3", id: "success_audio") %>
       <% if @data.any? %>
-        <div id="islander-board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 animate__animated animate__rollOut">
+        <div id="islander-board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 animate__animated">
         <% @data.each_with_index do |card, index| %>
           <% background = ""%>
           <% if card.color == "blue" %>
@@ -38,7 +38,7 @@
           </section>
         <% end %>
       </div>
-      <div id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 animate__animated animate__rollIn" >
+      <div id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 animate__animated" >
         <% @data.each_with_index do |card, index| %>
           <section class="col mb-4">
             <div class="board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="card<%= index %>">
