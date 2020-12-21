@@ -69,21 +69,18 @@ _No known bugs at this time._
 
 Monday Morning
 * Update random board show page to look like game board show page to accomodate new win image
+* Change api search query so that an exact match needs to occur; and add name to random game board?
 * Add animations: scrolling effect for how does it work section, clouds across home screen
 * Fix button hover styling on outlines and splash pages
+* Figure out why sound effect does not work on second guess - probably an asyn issues (and remove initial loading sound)
+* Afternoon: Testing, testing, testing
 
-
-* Monday
-* Morning: Testing, testing, testing
-* Afternoon: Refactor!
-
+Tuesday Morning
 * Update data table visualization graph on README
 * Finalize README documentation
-
-Tuesday
-* Final clean up
-* Prep for presentation
+* Misc cleanup/refactor
 * Add loading wheel animation to API page (and possible confetti on win page), if time
+Afternoon: Deploy and prep for presentation
 
 ## Support and Contact Details
 

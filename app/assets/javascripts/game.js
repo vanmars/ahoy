@@ -26,6 +26,7 @@ $(document).ready(function() {
       $('#win-para').css("color", "#CAFDFF")
       // Hide nav bar, and game board, and show win container
       $('.play-container').hide();
+      
       $('.win-container').show();
       document.querySelector('#win_audio').play()
     };
