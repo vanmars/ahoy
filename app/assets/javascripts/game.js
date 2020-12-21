@@ -1,8 +1,8 @@
 // Audio 
 const setVolume = () => {
-  document.querySelector('#win_audio').volume = 0.1;
-  document.querySelector('#success_audio').volume = 0.1;
-  document.querySelector('#wrong_audio').volume = 0.1;
+  document.querySelector('#win_audio').volume = 0.5;
+  document.querySelector('#success_audio').volume = 0.4;
+  document.querySelector('#wrong_audio').volume = 0.8;
 };
 
 const correctSound = () => {
