@@ -91,6 +91,10 @@
 
 .win-container button {
   align-self: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background-color: $yellow;
 }
 
 .win-container button:hover {
@@ -100,7 +104,11 @@
   margin: -1px;
 }
 
-@media screen and (max-width: 540px) {
+.win-container .nav-link:hover {
+  color: $yellow;
+}
+
+@media screen and (max-width: 580px) {
   #win-para {font-size: 70px}
   .win-container button { padding: 0; }
 }
