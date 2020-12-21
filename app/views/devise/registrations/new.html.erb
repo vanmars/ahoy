@@ -1,5 +1,4 @@
-<div class="registration-container d-flex flex-column align-items-center">
-  <br>
+<main class="registration-container d-flex flex-column align-items-center justify-content-center">
   <div class="navbar-nav">
     <%= link_to 'AHOY!', home_index_path, class:"nav-brand", id: "signup-header"%>
   </div>
@@ -39,10 +38,10 @@
         <br>
 
         <div class="actions">
-          <%= f.submit "Sign Up", class: "btn sign-up-btn-dark", id: "signup-btn" %>
+          <%= f.submit "Sign Up", class: "btn", id: "signup-btn" %>
         </div>
       <% end %>
       <br>
       <%= render "devise/shared/links" %>
   </div>
-</div>
+</main>
