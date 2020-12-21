@@ -16,7 +16,6 @@ const incorrectSound = () => {
 
 $(document).ready(function() {  
   setVolume();
-
   // 1. HANDLE WIN SCENARIO
   // When the blue count list length equals four, cue blue win scenario page.
   const blueWin = () => {

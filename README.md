@@ -66,19 +66,19 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-Saturday
+
+Monday Morning
 * Update random board show page to look like game board show page to accomodate new win image
 * Add animations: scrolling effect for how does it work section, clouds across home screen
-* Add many more entries to API!
-
-Sunday
 * Fix button hover styling on outlines and splash pages
-* Update data table visualization graph on README
-* Finalize README documentation
+
 
 * Monday
 * Morning: Testing, testing, testing
 * Afternoon: Refactor!
+
+* Update data table visualization graph on README
+* Finalize README documentation
 
 Tuesday
 * Final clean up

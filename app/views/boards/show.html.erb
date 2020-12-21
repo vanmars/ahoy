@@ -31,7 +31,6 @@
             <% elsif card.color == "red" %>
               <% background = "#A54E4D" %>
             <% end %>
-
             <section class="col mb-4">
               <div class="islander-board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="islander-board-card<%= index %>" style="background-color: <%= background %>">
                 <p class="card-text"><%= card.text %></p>
@@ -39,7 +38,6 @@
             </section>
           <% end %>
         </div>
-
         <div id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" >
           <% @data.each_with_index do |card, index| %>
             <section class="col mb-4">
@@ -49,7 +47,6 @@
             </section>
           <% end %>
         </div>
-
       <% else %>
         <p>There was an error. Please enter your outlines again. Make sure both outlines have the correct information stored!</p>
         <%= link_to 'Play', new_board_path %>
@@ -57,8 +54,6 @@
     </article>
   </main>
 </div>
-
-
 <div class='win-container' style="display:none">
   <main>
     <%= audio_tag("win.mp3", id: 'win_audio') %>

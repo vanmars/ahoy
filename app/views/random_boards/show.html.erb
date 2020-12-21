@@ -1,61 +1,67 @@
+ <div class='random-play-container'>
  <header>
-  <nav class="game-nav navbar navbar-expand-sm ">
-    <div class="navbar-nav mr-auto">
-      <%= link_to 'AHOY!', random_board_path(@random.id), method: :delete, class:"nav-brand", id: "game-nav-header" %>
-      <% if @turn === "blue" %>
-        <p id="turn-text">Blue's Turn</p>
-      <% else %>
-        <p id="turn-text">Green's Turn</p>
-      <% end %>
-    </div>
-    <div class="navbar-nav ml-auto game-view-nav">
-      <p id="game-view">Go To Islander's View</p>
-    </div>
-  </nav>
-</header>
-
-<main class="game-container">
-  <% if @data.any? %>
-    <article id="islander-board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" style="display:none" >
-      <% @data.each_with_index do |card, index| %>
-        <% background = ""%>
-        <% if card.color == "blue" %>
-          <% background ="#4197E5" %>
-        <% elsif card.color == "green" %>
-          <% background = "#5F7511" %>
-        <% elsif card.color == "yellow" %>
-          <% background = "#F1AB5E" %>
-        <% elsif card.color == "red" %>
-          <% background = "#A54E4D" %>
+    <nav class="game-nav navbar navbar-expand-sm ">
+      <div class="navbar-nav mr-auto">
+        <%= link_to 'AHOY!', random_board_path(@random.id), method: :delete, class:"nav-brand", id: "game-nav-header" %>
+        <% if @turn === "blue" %>
+          <p id="turn-text">Blue's Turn</p>
+        <% else %>
+          <p id="turn-text">Green's Turn</p>
         <% end %>
-
-        <section class="col mb-4">
-          <div class="islander-board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="islander-board-card<%= index %>" style="background-color: <%= background %>">
-            <p class="card-text"><%= card.text %></p>
-          </div>
-        </section>
+      </div>
+      <div class="navbar-nav ml-auto game-view-nav">
+        <p id="game-view">Go To Islander's View</p>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article class="game-container">
+      <%= audio_tag("water_drip.mp3", id: "wrong_audio") %>
+      <%= audio_tag("success.mp3", id: "success_audio", autoplay:true) %>
+      <% if @data.any? %>
+        <div id="islander-board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" style="display:none" >
+        <% @data.each_with_index do |card, index| %>
+          <% background = ""%>
+          <% if card.color == "blue" %>
+            <% background ="#4197E5" %>
+          <% elsif card.color == "green" %>
+            <% background = "#5F7511" %>
+          <% elsif card.color == "yellow" %>
+            <% background = "#F1AB5E" %>
+          <% elsif card.color == "red" %>
+            <% background = "#A54E4D" %>
+          <% end %>
+          <section class="col mb-4">
+            <div class="islander-board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="islander-board-card<%= index %>" style="background-color: <%= background %>">
+              <p class="card-text"><%= card.text %></p>
+            </div>
+          </section>
+        <% end %>
+      </div>
+      <div id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" >
+        <% @data.each_with_index do |card, index| %>
+          <section class="col mb-4">
+            <div class="board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="card<%= index %>">
+              <p class="card-text"><%= card.text %></p>
+            </div>
+          </section>
+        <% end %>
+      </div>
+      <% else %>
+        <p>There was an error. Please search for another book.</p>
+        <%= link_to 'New Random Board', new_random_board_path %>
       <% end %>
     </article>
-
-    <article id="board" class="row row-cols-2 row-cols-sm-3 row-cols-md-4" >
-      <% @data.each_with_index do |card, index| %>
-        <section class="col mb-4">
-          <div class="board-card card h-100 p-2 text-center <%= card.category %> <%= card.color %>" id="card<%= index %>">
-            <p class="card-text"><%= card.text %></p>
-          </div>
-        </section>
-      <% end %>
-    </article>
-    <article class="card shadow p-4 mx-auto mt-5 w-50 text-center" id="win-card">
-      <div id="win-div">
+  </main>
+</div>
+<div class='win-container' style="display:none">
+  <main>
+    <%= audio_tag("win.mp3", id: 'win_audio') %>
+    <article class="d-flex justify-content-center">
+      <div class="card shadow p-4 w-50 text-center" id="win-card">
         <p id="win-para"></p>
         <button class="btn sign-in-btn-dark"><%= link_to 'Home', random_board_path(@random.id), method: :delete, class:'nav-link' %></button>
       </div>
     </article>
-
-  <% else %>
-    <p>There was an error. Please search for another book.</p>
-    <%= link_to 'New Random Board', new_random_board_path %>
-  <% end %>
-
-</main>
+  </main>
+</div>
