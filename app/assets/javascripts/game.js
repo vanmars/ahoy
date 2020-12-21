@@ -41,7 +41,7 @@ $(document).ready(function() {
       // Hide nav bar, and game board, and show win container
       $('.play-container').hide();
       $('.win-container').show();
-      document.querySelector('.win-para-div').classList.add("animate_animated animate_tada animate_repeat_20")
+      document.querySelector('.win-para-div').classList.add("animate__animated animate__tada animate__repeat__20")
       document.querySelector('#win_audio').play()
       };
   };
@@ -160,11 +160,21 @@ $(document).ready(function() {
     const view = document.querySelector('#game-view');
     // const cards = document.querySelectorAll('.board-card');
     if (view.innerHTML === "Go To Islander's View") {
-      $('#islander-board').hide();
-      $('#board').show();
+      $('#islander-board').removeClass("animate__rollOut");
+      $('#board').removeClass("animate__rollIn");
+      $('#board').addClass("animate__rollOut");
+      $('#islander-board').addClass("animate__rollIn");
+      
+
+      // $('#islander-board').hide();
+      // $('#board').show();
     } else if (view.innerHTML === "Go To Captain's View") {
-      $('#board').hide();
-      $('#islander-board').show();
+      $('#islander-board').removeClass("animate__rollIn");
+      $('#board').removeClass("animate__rollOut");
+      $('#islander-board').addClass("animate__rollOut");
+      $('#board').addClass("animate__rollIn");
+      // $('#board').hide();
+      // $('#islander-board').show();
     }
   };
   // Create Lists to track when flipped blue cards and flipped green cards occur. Use the cardClicked function above to append each list.
