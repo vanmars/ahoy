@@ -18,8 +18,35 @@ text-align: center;
 
 .directions h2 {
 font-size: 26px;
+color: $navy-blue;
 }
 
 .directions a {
 align-self: center;
+}
+
+.directions ol {
+  font-weight: bolder;
+  color: $blue;
+}
+
+.directions li#green {
+  color: $green;
+}
+
+.directions li#yellow {
+  color: $yellow;
+}
+
+.directions li#red {
+  color: $red;
+}
+
+.directions ol span {
+  font-weight: normal;
+  color: black;
+}
+
+.directions ul#striped li:nth-of-type(odd) {
+  color: $blue;
 }
