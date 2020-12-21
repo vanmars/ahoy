@@ -4,7 +4,7 @@
 <main class="about">
   <%= render 'shared/splash_tagline' %> 
   <div class="row justify-content-center">
-    <div class="card shadow p-4"
+    <div class="card shadow p-5"
       data-aos="flip-left"
       data-aos-duration="2000">
       <h1>About</h1>
@@ -12,60 +12,83 @@
       <h3><em>Are your students writing grammatically correct and structurally sound essays that, nevertheless, fall flat? Do they continually select weak evidence and not know why? Are they unsure what aspects of their evidence need more explanation?</em></h3>
       <p>Ahoy! is a collaborative, outline-intervention game that exposes writers to readers' reactions before  writing a first draft.</p>
       <hr />
-      <br>
-      <h2>Learning Theory</h2>
-      <p>Ahoy! was conceptualized by Vanessa Stewart while she was a Learning Sciences student at Northwestern. As a former teacher, Vanessa knew that students often struggled during the outlining phase of the writing process. Weak outlines would later lead to final results that were either uncompelling or unpersuasive. There had to be a better way to engage learners in this critical writing process!</p>
-      <p>Check out the full design paper!</p>
-      <%= link_to 'Ahoy!: A Dialogic, Discovery Outline Intervention Game', asset_path('research.pdf', skip_pipeline: true), :target => "_blank" %>
-      <br>
-      <hr />
-      <br>
-      <h3>What is it?</h3>
-      <p>An essay outline intervention game</p>
-      <h3>Who is it for?</h3>
-      <p>Middle and high school English Language Arts students</p>
-      <h3>Learning Obstacles?</h3>
-      <p>When students write outlines in isolation and without feedback (as they typically do in the English classroom), they</p>
-      <ul>
-        <li>Are cut off from helpful interactions with peers that create audience awareness necessary to good writing.</li>
-        <li>Miss out on opportunities for authentic discovery, which is central to deep learning.</li>
-        <li>Disengage and so work passively and with little risk-taking.</li>
-      </ul>
-      <h3>Solutions?</h3>
-      <p>Ahoy! seek to overcome these obstacles by . . .</p>
-       <ul>
-        <li>Giving students a new way to experience classic texts.</li>
-        <li>Engaging students with their peers: we are social creatures and are learning is enhanced with others!</li>
-        <li>Cultivating playfulness to encourage curiosity, imagination, and experimentation -- all things that spark new and interesting ideas</li>
-        <li>Creating a 'psychosocial moratorium' -- a.k.a. a safe space to take risks and be flat out wrong -- it's a game after all!</li> 
-      </ul>
-      <br>
-      <hr />
-      <br>
-      <h3>Core Theories Used</h3>
-      <p>Louise Rosenblatt's Transactional Theory of Reading and Writing</p>
-      <p>Jim Gee's Active Learning Principles</p>
-      <p>Jim Berland's Expectation Violation</p>
-      <br>
-      <hr />
-      <br>
-      <h3>Further Readings</h3>
-       <ul>
-        <li> Allen, L. K., Snow, E. L., & McNamara, D. S. (2016). The narrative waltz: The role of flexibility in writing proficiency. Journal of Educational Psychology, 108(7), 911-924.</li>
-        <li>Applebee, A. N. & Langer, J. A. (2009). What is happening in the teaching of writing? English Journal, 98(5), 18-28.</li>
-        <li>Berland, M. (2016). Makeology: Making, tinkering, and computational literacy. In K. Peppler, E. R. Halverson, & Y. B. Kafai  (Eds.), Makers as learners (Vol. 2), (pp. 196-205). New York, NY: Routledge.</li>
-        <li>Elbow, P. (1981). Writing with power: Techniques for mastering the writing process. New York, NY: Oxford University Press.</li>
-        <li>Freire, Paulo. (1970/2012). Pedagogy of the oppressed (30th ed.). New York, NY: Continuum.</li>
-        <li>Gee, J. P. (2003) What video games have to teach us about learning and literacy. Macmillan and Houndmill: Basingstoke, England.</li>
-        <li>Griffin, E. (2009). A first look at communication theory (7th ed.). Boston, MA: McGraw.</li>
-        <li>Ormord, J. E. (2008). Educational psychology: Developing learners (6th ed.). Upper Saddle River, NJ: Pearson. </li>
-        <li>Pirie, B. (1997). Reshaping high school English. Urbana, IL: National Council of Teachers of English.</li>
-        <li>Resnick, M., & Robinson, K. (2017). Lifelong kindergarten: Cultivating creativity through projects, passion, peers, and play. Cambridge, MA: MIT Press.</li>
-        <li>Rosenblatt, L. M. (1988). Writing and reading: The transactional theory. Champaign, IL: University of Illinois at Urbana-Champaign.</li>
-        <li>Traxler, M. J., & Gernsbacher, M. A. (1992) Improving written communication through minimal feedback. Language and Cognitive Processes, 7(1), 1-22.</li>
-        <li>Yancey, K. B. (2009). Writing in the 21st century: A report from the National Council of Teachers of English [PDF file]. Retrieved from http://www.ncte.org.turing.library.northwestern.edu/library/NCTEFiles/Press/Yancey_final.pdf.</li>
-      </ul>
-      <hr />
+      <br />
+
+      <div data-aos="fade-down-right"
+        data-aos-delay="500"
+        data-aos-duration="2000">
+        <h2>Learning Theory</h2>
+        <p>Ahoy! was conceptualized by Vanessa Stewart while she was a Learning Sciences student at Northwestern. As a former teacher, Vanessa knew that students often struggled during the outlining phase of the writing process. Weak outlines would later lead to final results that were either uncompelling or unpersuasive. There had to be a better way to engage learners in this critical writing process!</p>
+        <p>Check out the full design paper!</p>
+        <%= link_to 'Ahoy!: A Dialogic, Discovery Outline Intervention Game', asset_path('research.pdf', skip_pipeline: true), :target => "_blank" %>
+        <br />
+        <br />
+        <hr />
+        <br />
+      </div>
+
+      <div data-aos="fade-down-left"
+        data-aos-delay="1000"
+        data-aos-duration="2000">
+        <h2>Overview</h2>
+        <h3>What is it?</h3>
+        <p>An essay outline intervention game</p>
+        <h3>Who is it for?</h3>
+        <p>Middle and high school English Language Arts students</p>
+        <h3>Learning Obstacles?</h3>
+        <p>When students write outlines in isolation and without feedback (as they typically do in the English classroom), they</p>
+        <ul>
+          <li>Are cut off from helpful interactions with peers that create audience awareness necessary to good writing.</li>
+          <li>Miss out on opportunities for authentic discovery, which is central to deep learning.</li>
+          <li>Disengage and so work passively and with little risk-taking.</li>
+        </ul>
+        <h3>Solutions?</h3>
+        <p>Ahoy! seek to overcome these obstacles by . . .</p>
+        <ul>
+          <li>Giving students a new way to experience classic texts.</li>
+          <li>Engaging students with their peers: we are social creatures and are learning is enhanced with others!</li>
+          <li>Cultivating playfulness to encourage curiosity, imagination, and experimentation -- all things that spark new and interesting ideas</li>
+          <li>Creating a 'psychosocial moratorium' -- a.k.a. a safe space to take risks and be flat out wrong -- it's a game after all!</li> 
+        </ul>
+        <br>
+        <hr />
+        <br>
+      </div>
+
+      <div data-aos="fade-down-right"
+        data-aos-duration="2000">
+        <h2>Core Theories Used</h2>
+        <p>Louise Rosenblatt's Transactional Theory of Reading and Writing</p>
+        <p>Jim Gee's Active Learning Principles</p>
+        <p>Jim Berland's Expectation Violation</p>
+        <br>
+        <hr />
+        <br>
+      </div>
+
+      <div data-aos="fade-down-left"
+        data-aos-duration="2000">
+        <h2>Further Readings</h2>
+        <ul>
+          <li> Allen, L. K., Snow, E. L., & McNamara, D. S. (2016). The narrative waltz: The role of flexibility in writing proficiency. Journal of Educational Psychology, 108(7), 911-924.</li>
+          <li>Applebee, A. N. & Langer, J. A. (2009). What is happening in the teaching of writing? English Journal, 98(5), 18-28.</li>
+          <li>Berland, M. (2016). Makeology: Making, tinkering, and computational literacy. In K. Peppler, E. R. Halverson, & Y. B. Kafai  (Eds.), Makers as learners (Vol. 2), (pp. 196-205). New York, NY: Routledge.</li>
+          <li>Elbow, P. (1981). Writing with power: Techniques for mastering the writing process. New York, NY: Oxford University Press.</li>
+          <li>Freire, Paulo. (1970/2012). Pedagogy of the oppressed (30th ed.). New York, NY: Continuum.</li>
+          <li>Gee, J. P. (2003) What video games have to teach us about learning and literacy. Macmillan and Houndmill: Basingstoke, England.</li>
+          <li>Griffin, E. (2009). A first look at communication theory (7th ed.). Boston, MA: McGraw.</li>
+          <li>Ormord, J. E. (2008). Educational psychology: Developing learners (6th ed.). Upper Saddle River, NJ: Pearson. </li>
+          <li>Pirie, B. (1997). Reshaping high school English. Urbana, IL: National Council of Teachers of English.</li>
+          <li>Resnick, M., & Robinson, K. (2017). Lifelong kindergarten: Cultivating creativity through projects, passion, peers, and play. Cambridge, MA: MIT Press.</li>
+          <li>Rosenblatt, L. M. (1988). Writing and reading: The transactional theory. Champaign, IL: University of Illinois at Urbana-Champaign.</li>
+          <li>Traxler, M. J., & Gernsbacher, M. A. (1992) Improving written communication through minimal feedback. Language and Cognitive Processes, 7(1), 1-22.</li>
+          <li>Yancey, K. B. (2009). Writing in the 21st century: A report from the National Council of Teachers of English [PDF file]. Retrieved from http://www.ncte.org.turing.library.northwestern.edu/library/NCTEFiles/Press/Yancey_final.pdf.</li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+      </div>
+
     </div>
   </div>
 </main>
