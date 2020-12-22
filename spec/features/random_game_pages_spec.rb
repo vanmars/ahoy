@@ -16,4 +16,13 @@ describe "the generate a random game board" do
     click_on 'Play!'
     expect(page).to have_content "Sorry! No record matches your search. Please try another title."
   end
+
+  it 'returns to home screen if "Ahoy" logo clicked' do
+    visit root_path
+    click_link 'Random'
+    click_on 'AHOY!'
+    expect(page).to have_content "An outline rescue game."
+  end
+
+
 end
