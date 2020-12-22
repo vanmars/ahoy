@@ -68,7 +68,6 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 - To Run the App in Browser: While in the root directory of the project, run `rails s` in the terminal. This will start a server, which you can access by entering `localhost:3000` in your browser.
 
 ## :beetle: Known Bugs
-
 * Takes images a while to load; something to do with the production asset compile config
 * When first loading a game board, the outline of answers can be seen, once islander view is clicked, this is corrected; perhaps need to hide the islander view on first load?
 
