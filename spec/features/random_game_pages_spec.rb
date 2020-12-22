@@ -24,5 +24,4 @@ describe "the generate a random game board" do
     expect(page).to have_content "An outline rescue game."
   end
 
-
 end
