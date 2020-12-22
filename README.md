@@ -6,13 +6,14 @@
 <hr/>
 
 ## :book: Table of Contents
-1. [Description](https://github.com/vanmars/ahoy#description)
-1. [MVP User Stories](https://github.com/vanmars/ahoy#minimum-viable-product-user-stories)
-1. [Stretch Goal User Stories](https://github.com/vanmars/ahoy#stretch-goal-stories)
-1. [Setup/Installation Requirements](https://github.com/vanmars/ahoy#setupinstallation-requirements)
-1. [Known Bugs](https://github.com/vanmars/ahoy#known-bugs)
-1. [Support and Contact Details](https://github.com/vanmars/ahoy#support-and-contact-details)
-1. [Technologies Used](https://github.com/vanmars/ahoy#technologies-used)
+1. [Description](https://github.com/vanmars/ahoy#world_map-description)
+1. [MVP User Stories](https://github.com/vanmars/ahoy#raising_hand-minimum-viable-product-user-stories)
+1. [Stretch Goal User Stories](https://github.com/vanmars/ahoy#weight_lifting_woman-stretch-goal-stories)
+1. [Data Tables Visualization](https://github.com/vanmars/ahoy#mag_right-database-tables-visualization)
+1. [Setup/Installation Requirements](https://github.com/vanmars/ahoy#clipboard-setupinstallation-requirements)
+1. [Known Bugs](https://github.com/vanmars/ahoy#beetle-known-bugs)
+1. [Support and Contact Details](https://github.com/vanmars/ahoy#envelope-support-and-contact-details)
+1. [Technologies Used](https://github.com/vanmars/ahoy#gear-technologies-used)
 
 ## :world_map: Description
 
