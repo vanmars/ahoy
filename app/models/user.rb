@@ -8,10 +8,11 @@ class User < ApplicationRecord
 
   validates :name, presence: true
 
-  before_save(:titleize_user)
+# Code for titlizing user name (if so desired in future)
+#   before_save(:titleize_user)
 
-private
-  def titleize_user
-    self.name = self.name.titleize()
-  end
+# private
+#   def titleize_user
+#     self.name = self.name.titleize()
+#   end
 end

@@ -1,21 +1,30 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vanessa/Desktop/ahoy/spec/helpers/home_helper_spec.rb": {
+      "/Users/vanessa/Desktop/ahoy/spec/features/signup_pages_spec.rb": {
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -26,6 +35,7 @@
           1,
           1,
           null,
+          1,
           1,
           1,
           null,
@@ -678,11 +688,12 @@
           null,
           1,
           null,
-          1,
           null,
-          1,
-          1,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -706,8 +717,8 @@
           null,
           1,
           1,
-          0,
-          0,
+          4,
+          4,
           null,
           null
         ]
@@ -1093,6 +1104,24 @@
           null
         ]
       },
+      "/Users/vanessa/Desktop/ahoy/spec/helpers/home_helper_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/vanessa/Desktop/ahoy/spec/models/board_outline_spec.rb": {
         "lines": [
           1,
@@ -1163,9 +1192,10 @@
           null,
           2,
           null,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -1196,6 +1226,6 @@
         ]
       }
     },
-    "timestamp": 1608595416
+    "timestamp": 1608598352
   }
 }
