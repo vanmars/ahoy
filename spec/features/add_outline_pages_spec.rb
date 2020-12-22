@@ -75,4 +75,46 @@ describe "the adding outlines process" do
     expect(page).to have_content "Name can't be blank"
   end 
 
+  it 'returns to home screen if "Ahoy" logo clicked' do
+    # Sign up and log in
+    visit root_path
+    click_link 'Sign Up'
+    fill_in 'Name', with: 'test_name'
+    fill_in 'Email', with: 'test_email@email.com'
+    fill_in 'Password (6 characters minimum)', with: 'password'
+    fill_in 'Password Confirmation', with: 'password'
+    click_on 'Sign Up'
+    click_link 'Sign Out'
+    click_link 'Sign In'
+    fill_in 'Email', with: 'test_email@email.com'
+    fill_in 'Password', with: 'password'
+    click_on 'Log In'
+    # Create outline
+    click_link 'Outlines'
+    click_link 'Add an Outline'
+    click_on 'AHOY!'
+    expect(page).to have_content "All Rights Reserved."
+  end
+
+  it 'signs out user if sign out button clicked' do
+    # Sign up and log in
+    visit root_path
+    click_link 'Sign Up'
+    fill_in 'Name', with: 'test_name'
+    fill_in 'Email', with: 'test_email@email.com'
+    fill_in 'Password (6 characters minimum)', with: 'password'
+    fill_in 'Password Confirmation', with: 'password'
+    click_on 'Sign Up'
+    click_link 'Sign Out'
+    click_link 'Sign In'
+    fill_in 'Email', with: 'test_email@email.com'
+    fill_in 'Password', with: 'password'
+    click_on 'Log In'
+    # Create outline
+    click_link 'Outlines'
+    click_link 'Add an Outline'
+    click_link 'Sign Out'
+    expect(page).to have_content "Sign In"
+  end
+
 end
