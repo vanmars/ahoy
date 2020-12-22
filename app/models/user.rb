@@ -12,6 +12,6 @@ class User < ApplicationRecord
 
 private
   def titleize_user
-    self.name = self.name.titleize
+    self.name = self.name.titleize()
   end
 end

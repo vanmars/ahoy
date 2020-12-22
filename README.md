@@ -79,6 +79,7 @@ Afternoon: Deploy and Prep for Presentation
 
 Post - Presentation
 * Create a drop-down menu for API search results
+* Figure out why titleize callback does not work for User model
 * Figure out why sound effect does not work on second guess - probably an asyn issue
 
 ## Support and Contact Details

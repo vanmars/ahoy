@@ -1,7 +1,7 @@
 class Board < ApplicationRecord
   has_many :board_outlines
   has_many :outlines, through: :board_outlines
-  has_many :cards
+  has_many :cards 
 
   validates :name, :outline_id_1, :outline_id_2, presence: true
 
