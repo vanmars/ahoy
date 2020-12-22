@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vanessa/Desktop/ahoy/spec/features/signup_pages_spec.rb": {
+      "/Users/vanessa/Desktop/ahoy/spec/features/signin_pages_spec.rb": {
         "lines": [
           1,
           null,
@@ -15,10 +15,13 @@
           1,
           1,
           1,
-          null,
-          null,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           1,
@@ -717,8 +720,8 @@
           null,
           1,
           1,
-          4,
-          4,
+          11,
+          11,
           null,
           null
         ]
@@ -1104,6 +1107,33 @@
           null
         ]
       },
+      "/Users/vanessa/Desktop/ahoy/spec/features/signup_pages_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/vanessa/Desktop/ahoy/spec/helpers/home_helper_spec.rb": {
         "lines": [
           1,
@@ -1226,6 +1256,6 @@
         ]
       }
     },
-    "timestamp": 1608598352
+    "timestamp": 1608598820
   }
 }
