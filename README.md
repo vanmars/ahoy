@@ -1,13 +1,19 @@
-# Ahoy!: An outline rescue game  
+# Ahoy!: An Outline Rescue Game :palm_tree:  
 
-_18 December 2020_
+_22 December 2020_
 
 #### _An English language arts game for essay outlining_
 
 #### By _**Vanessa Stewart**_
 
 ## Table of Contents
-1. [Description]()
+1. [Description](https://github.com/vanmars/ahoy#description)
+1. [MVP User Stories](https://github.com/vanmars/ahoy#minimum-viable-product-user-stories)
+1. [Stretch Goal User Stories](https://github.com/vanmars/ahoy#stretch-goal-stories)
+1. [Setup/Installation Requirements](https://github.com/vanmars/ahoy#setupinstallation-requirements)
+1. [Known Bugs](https://github.com/vanmars/ahoy#known-bugs)
+1. [Support and Contact Details](https://github.com/vanmars/ahoy#support-and-contact-details)
+1. [Technologies Used](https://github.com/vanmars/ahoy#technologies-used)
 
 ## Description
 
@@ -66,16 +72,16 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## To Do/Improvements
-
-Monday Morning
-* Afternoon: Testing, testing, testing...and refactor
-* If Time: Add cloud animation on spash page, loading wheel animation on API page, (and possible confetti on win page)
-
 Tuesday Morning
 * Update data table visualization graph on README
 * Finalize README documentation
-* Misc cleanup/refactor
-Afternoon: Deploy and Prep for Presentation
+* Misc cleanup/refactor/tests
+* If Time: Add cloud animation on spash page, loading wheel animation on API page, (and possible confetti on win page)
+Afternoon: Deploy 
+
+Wednesday Morning
+* Prep for presentation
+* Post summary to Discord Channel
 
 Post - Presentation
 * Create a drop-down menu for API search results
