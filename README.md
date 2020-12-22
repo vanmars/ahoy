@@ -69,7 +69,8 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 
 ## :beetle: Known Bugs
 
-_No known bugs at this time._
+* Takes images a while to load; something to do with the production asset compile config
+* When first loading a game board, the outline of answers can be seen, once islander view is clicked, this is corrected; perhaps need to hide the islander view on first load?
 
 ## :hammer_and_wrench: To Do/Improvements
 * Create a drop-down menu for API search results
