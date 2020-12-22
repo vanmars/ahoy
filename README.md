@@ -1,7 +1,7 @@
 <h1 align="center">:desert_island: Ahoy!: An Outline Rescue Game</h1>  
 <img align="center" src="/app/assets/images/splashpage.png">
-<p align="center"><b>An English language arts game for essay outlining</em></p>
-<p align="center"><em>:date: Initiated: 22 November 2020. Updated: 22 December 2020.</em></p>
+<p align="center"><b>An English language arts game for essay outlining</b></p>
+<p align="center"><em>:date:  Initiated: 22 November 2020. Updated: 22 December 2020.</em></p>
 <p align="center">By Vanessa Stewart</p>
 <hr/>
 
@@ -22,7 +22,7 @@ As a former English teacher, I remember how I wished I and my students could hav
 
 Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage students in a critical examination of their outlines. Two students enter their outlines into the game, which randomizes their evidence in a game board. Each outliner gives a one sentence claim or clue to a partner to see if their partner can correctly guess the evidence the outliner selected to prove their claim. If a claim fails to work, the clue giver will have to improvise and craft and better claim. The team that selects all the evidence first wins!
 
-## :raising hand: Minimum Viable Product User Stories
+## :raising_hand: Minimum Viable Product User Stories
 | #    | Story | 
 | ---- | ----- | 
 | 1 | As a user I can see options on the splash page for signing up, signing in, or playing. I can also see links for directions, about, learning theory, attributions, and contact details. |
