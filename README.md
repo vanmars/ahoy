@@ -73,8 +73,6 @@ _No known bugs at this time._
 
 ## :hammer_and_wrench: To Do/Improvements
 Tuesday Morning
-* Update data table visualization graph on README
-* Finalize README documentation
 * Misc cleanup/refactor/tests
 * If Time: Add cloud animation on spash page, loading wheel animation on API page, (and possible confetti on win page)
 Afternoon: Deploy 
@@ -95,10 +93,11 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 ## :gear: Technologies Used
 
 * HTML
-* CSS/Bootstrap
-* JavaScript
-* Ruby
-* Rails
+* CSS/SASS
+* Bootstrap/Animate.css/AOS
+* JavaScript/jQuery
+* Ruby/Rails
+* PostgreSQL
 
 ## :ledger: Log for Epicodus Instructors - 18 December 2020
 8:00 - Work on exception handling when no outline id matches 
