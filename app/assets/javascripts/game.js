@@ -1,23 +1,21 @@
-// Audio 
-const setVolume = () => {
-  document.querySelector('#win_audio').volume = 0.5;
-  document.querySelector('#success_audio').volume = 0.4;
-  document.querySelector('#wrong_audio').volume = 0.8;
-};
-
-const correctSound = () => {
-  document.querySelector('#success_audio').play();
-};
-
-const incorrectSound = () => {
-  document.querySelector('#wrong_audio').play();
-};
-
-
 $(document).ready(function() {  
-  // setVolume();
+  // 1. Set Audio 
+  const setVolume = () => {
+    document.querySelector('#win_audio').volume = 0.5;
+    document.querySelector('#success_audio').volume = 0.4;
+    document.querySelector('#wrong_audio').volume = 0.8;
+  };
 
-  // 1. HANDLE WIN SCENARIO
+  const correctSound = () => {
+    document.querySelector('#success_audio').play();
+  };
+
+  const incorrectSound = () => {
+    document.querySelector('#wrong_audio').play();
+  };
+  setVolume();
+
+  // 2. HANDLE WIN SCENARIO
   // When the blue count list length equals four, cue blue win scenario page.
   const blueWin = () => {
     if (flippedBlue.length == 4) {
@@ -48,7 +46,7 @@ $(document).ready(function() {
     };
   };
 
-   // 2. HANDLE TURN TRACKING
+   // 3. HANDLE TURN TRACKING
   // Create function that defines how to change text, turn, clickTracker list on each turn scenario.
   const turnChange = (ev) => {
     // If turn is blue, and it is the first turn.
@@ -116,7 +114,7 @@ $(document).ready(function() {
     };
   };
 
-  // 3. WHEN A USER CLICKS ON A CARD, THE CARD TURNS THE CORRECT COLOR.
+  // 4. WHEN A USER CLICKS ON A CARD, THE CARD TURNS THE CORRECT COLOR.
   // Create Event Handlers
   const cardClicked = (ev) => {
     if (ev.target.classList.contains('blue')) {           
@@ -148,7 +146,7 @@ $(document).ready(function() {
     turnChange(ev);
   };
 
-   // 4. User CAN TOGGLE THE VIEW
+   // 5. User CAN TOGGLE THE VIEW
    const viewToggler = (ev) => {
     if (ev.target.innerHTML === "Go To Islander's View") {
       ev.target.innerHTML = "Go To Captain's View";
