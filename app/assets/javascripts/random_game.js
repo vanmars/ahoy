@@ -1,14 +1,14 @@
-const showLoader = () => {
+const addSpinner = () => {
   console.log("Spinner initiated!")
-  $('.loading-spinner').show();
+  $('.loading').append('<div class="loading-spinner"></div>');
 }
 
-const hideLoader = () => {
+const removeSpinner = () => {
   console.log("Spinner hidden")
-  $('.loading-spinner').hide();
+  $('.loading-spinner').remove();
 }
 
 $(document).ready(() => {
-  $('.load-spinner-btn').click(showLoader);
-  $(document).change(hideLoader);
+  $('.load-spinner-btn').on('click', addSpinner)
+  $('.play-container').on('load', removeSpinner)
 });

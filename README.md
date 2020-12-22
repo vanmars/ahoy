@@ -72,19 +72,8 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 _No known bugs at this time._
 
 ## :hammer_and_wrench: To Do/Improvements
-Tuesday Morning
-* Misc cleanup/refactor/tests
-* If Time: Add cloud animation on spash page, loading wheel animation on API page, (and possible confetti on win page)
-Afternoon: Deploy 
-
-Wednesday Morning
-* Prep for presentation
-* Post summary to Discord Channel
-
-Post - Presentation
 * Create a drop-down menu for API search results
-* Figure out why titleize callback does not work for User model
-* Figure out why sound effect does not work on second guess - probably an asyn issue
+* Get loading spinner to work on New Random Board page
 
 ## :envelope: Support and Contact Details
 

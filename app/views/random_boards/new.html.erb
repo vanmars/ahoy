@@ -14,11 +14,11 @@
         <%= f.text_field :book_title, placeholder:'Enter a Book Title', class: 'form-control text-center', style: 'width: 50%' %>
       </div>
       <br> 
-      <%= f.submit 'Play!', class: "btn random-btn-dark load-spinner-btn", id: 'random-btn' %>
+      <div class="random-btn-div m-0 p-0">
+        <%= f.submit 'Play!', class: "btn random-btn-dark load-spinner-btn", id: 'random-btn' %>
+      </div>
     <% end %>
     <br />
-    <div class="loading d-flex justify-content-center">
-      <div class="loading-spinner"></div>
-    </div>
+    <div class="loading d-flex justify-content-center"></div>
   </div>
 </main>
