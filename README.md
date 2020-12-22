@@ -46,7 +46,7 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 
 ## :clipboard: Setup/Installation Requirements
 **To View Project**
-* Open a web browser of your choice and navigate to the following page: COMING SOON!
+* This application is hosted on [Heroku](https://ancient-bayou-05648.herokuapp.com/)
 
 **To Extend Project**
 1. Install Rails
@@ -74,6 +74,7 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 ## :hammer_and_wrench: To Do/Improvements
 * Create a drop-down menu for API search results
 * Get loading spinner to work on New Random Board page
+* Add many more entries to great books API
 
 ## :envelope: Support and Contact Details
 
