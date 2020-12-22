@@ -1096,6 +1096,19 @@
           null
         ]
       },
+      "/Users/vanessa/Desktop/ahoy/spec/features/credits_pages_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/vanessa/Desktop/ahoy/spec/features/game_pages_spec.rb": {
         "lines": [
           1,
@@ -1341,6 +1354,6 @@
         ]
       }
     },
-    "timestamp": 1608603130
+    "timestamp": 1608603226
   }
 }
