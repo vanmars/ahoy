@@ -83,41 +83,8 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 ## :gear: Technologies Used
 
 * HTML
-* CSS/SASS
+* CSS/SCSS
 * Bootstrap/Animate.css/AOS
 * JavaScript/jQuery
 * Ruby/Rails
 * PostgreSQL
-
-## :ledger: Log for Epicodus Instructors - 18 December 2020
-8:00 - Work on exception handling when no outline id matches 
-
-9:00 - Work on exception handling when API response is nil
-
-9:30 - Reformat forms styling - buttons and input fields/labels
-
-10:00 - Break
-
-10:15 - Remove shared footer from application and only render only home and outline pages
-
-10:30 - Delete game board from database when user exits the game by selecting the Ahoy! logo, to keep DB maintainable
-
-10:45 - Discover bug in generate random game board - the exception handler is preventing even valid searches from going through; begin debuggins
-
-11:00 - Work on styling win scenario page; can't seem to reset the backgroun image
-
-12:30 - Work on fixing learning theory section layout on splash page
-
-1:00 - Lunch
-
-2:00 - Begin research on adding sound and animation
-
-3:00 - Break
-
-3:30 - Begin downloading sounds and incorporating in project; logic seems correct, but can't seem to get it working
-
-4:30 - Do more research to find a different approach
-
-4:50 - Get sound to work when page loaded, so I know that the audio files work and are connected in the asset pipeline; need to figure out why .play() is not reading as a function
-
-6:00 - Get game sounds working -- woot woot! (Needed to reload server and use vanilla js rather than jquery for some reason)
