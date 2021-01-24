@@ -72,9 +72,8 @@ Ahoy! uses the power of collaboration, cognitive dissonance, and play to engage 
 * When first loading a game board, the outline of answers can be seen, once islander view is clicked, this is corrected; perhaps need to hide the islander view on first load?
 
 ## :hammer_and_wrench: To Do/Improvements
-* Clean up javascript file;
+* Refactor game controllers
 * Make responsive for mobile
-* Figure out board sizing so that first load does not show color at bottom of tiles
 * Fix home buttons, when cursor on edge the text disappears.
 * Create a drop-down menu for API search results
 * Add many more entries to great books API
