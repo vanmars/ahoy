@@ -58,7 +58,7 @@ class RandomBoardsController < ApplicationController
       redirect_to :new
     end
     # Determine First Turn
-    random = rand(0..3)
+    random = rand(1..2)
     @turn = ""
     if random === 1 
       @turn = "blue"

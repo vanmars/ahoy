@@ -46,7 +46,7 @@ class BoardsController < ApplicationController
     data = [ @out1ev1a, @out1ev1b, @out1cc1, @out1rh1, @out1ev2a, @out1ev2b, @out1cc2, @out1rh2, @out2ev1a, @out2ev1b, @out2cc1,  @out2rh1, @out2ev2a, @out2ev2b, @out2cc2, @out2rh2 ]
     @data = data.shuffle
     # Determine First Turn
-    random = rand(0..3)
+    random = rand(1..2)
     @turn = ""
     if random === 1 
       @turn = "blue"
